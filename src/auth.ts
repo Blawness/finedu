@@ -17,6 +17,14 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         Google({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+            profile(profile) {
+                return {
+                    id: profile.sub,
+                    name: profile.name,
+                    email: profile.email,
+                    image: profile.picture,
+                };
+            },
         }),
         Credentials({
             name: "credentials",
@@ -52,7 +60,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                     id: user.id,
                     email: user.email,
                     name: user.name,
-                    image: user.avatar,
+                    image: user.image,
                 };
             },
         }),
