@@ -121,26 +121,55 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
+@layer components {
+  .container {
+    @apply mx-auto px-4 max-w-7xl;
+  }
+}
+
 /* Custom animations */
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px oklch(0.55 0.16 160 / 0.3); }
-  50% { box-shadow: 0 0 40px oklch(0.55 0.16 160 / 0.5); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px oklch(0.55 0.16 160 / 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 40px oklch(0.55 0.16 160 / 0.5);
+  }
 }
 
 @keyframes gradient-flow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .animate-float {
