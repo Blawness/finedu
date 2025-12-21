@@ -1,0 +1,175 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  avatar    String?
+  password  String?
+
+  totalXP   Int      @default(0)
+  level     Int      @default(1)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  quizAttempts QuizAttempt[]
+  achievements UserAchievement[]
+  streak       UserStreak?
+
+  accounts Account[]
+  sessions Session[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Category {
+  id          Int     @id @default(autoincrement())
+  name        String
+  slug        String  @unique
+  description String?
+  icon        String  @default("📚")
+  color       String  @default("#10b981")
+
+  quizzes Quiz[]
+}
+
+model Quiz {
+  id          Int      @id @default(autoincrement())
+  title       String
+  slug        String   @unique
+  description String?
+  categoryId  Int
+  difficulty  String   @default("MEDIUM")
+  xpReward    Int      @default(100)
+  timeLimit   Int      @default(300)
+  isActive    Boolean  @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  category  Category      @relation(fields: [categoryId], references: [id])
+  questions Question[]
+  attempts  QuizAttempt[]
+}
+
+model Question {
+  id          Int     @id @default(autoincrement())
+  quizId      Int
+  content     String
+  explanation String?
+  order       Int     @default(0)
+
+  quiz        Quiz           @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  options     AnswerOption[]
+  userAnswers UserAnswer[]
+}
+
+model AnswerOption {
+  id         Int     @id @default(autoincrement())
+  questionId Int
+  content    String
+  isCorrect  Boolean @default(false)
+
+  question    Question     @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  userAnswers UserAnswer[]
+}
+
+model QuizAttempt {
+  id          Int      @id @default(autoincrement())
+  userId      String
+  quizId      Int
+  score       Int      @default(0)
+  xpEarned    Int      @default(0)
+  timeTaken   Int      @default(0)
+  completedAt DateTime @default(now())
+
+  user    User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  quiz    Quiz         @relation(fields: [quizId], references: [id])
+  answers UserAnswer[]
+}
+
+model UserAnswer {
+  id               Int     @id @default(autoincrement())
+  attemptId        Int
+  questionId       Int
+  selectedOptionId Int
+  isCorrect        Boolean
+
+  attempt        QuizAttempt  @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question       Question     @relation(fields: [questionId], references: [id])
+  selectedOption AnswerOption @relation(fields: [selectedOptionId], references: [id])
+}
+
+model Achievement {
+  id          Int    @id @default(autoincrement())
+  name        String @unique
+  description String
+  icon        String
+  badgeColor  String @default("#FFD700")
+  type        String
+  threshold   Int    @default(1)
+
+  users UserAchievement[]
+}
+
+model UserAchievement {
+  userId        String
+  achievementId Int
+  earnedAt      DateTime @default(now())
+
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement Achievement @relation(fields: [achievementId], references: [id])
+
+  @@id([userId, achievementId])
+}
+
+model UserStreak {
+  userId         String   @id
+  currentStreak  Int      @default(0)
+  longestStreak  Int      @default(0)
+  lastActiveDate DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
