@@ -54,7 +54,7 @@ fetch('https://your-app.vercel.app/api/admin/import-quiz', {
 ### 4. Cek Status Quiz (GET)
 
 ```bash
-curl https://your-app.vercel.app/api/admin/import-quiz \
+curl https://www.finedu.my.id/api/admin/import-quiz \
   -H "Authorization: Bearer your-super-secret-key-here-change-this"
 ```
 
