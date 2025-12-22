@@ -3,8 +3,6 @@ import { notFound } from "next/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import prisma from "@/lib/prisma";
 import { getDifficultyColor, getDifficultyLabel } from "@/lib/gamification";
 import { ChevronLeft, Clock, Zap, ChevronRight } from "lucide-react";
@@ -41,7 +39,6 @@ export default async function CategoryPage({ params }: Props) {
 
     return (
         <div className="min-h-screen flex flex-col">
-            <Header />
 
             <main className="flex-1 py-12">
                 <div className="container">
@@ -127,8 +124,6 @@ export default async function CategoryPage({ params }: Props) {
                     )}
                 </div>
             </main>
-
-            <Footer />
         </div>
     );
 }

@@ -2,8 +2,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import {
   Zap,
   Trophy,
@@ -110,7 +108,6 @@ const stats = [
 export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
 
       <main className="flex-1">
         {/* Hero Section */}
@@ -288,8 +285,6 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

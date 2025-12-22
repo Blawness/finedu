@@ -1,0 +1,266 @@
+[
+    {
+        "title": "Pengenalan Fintech Syariah",
+        "slug": "pengenalan-fintech-syariah",
+        "description": "Memahami konsep dasar dan jenis-jenis fintech syariah di Indonesia",
+        "categorySlug": "fintech-syariah",
+        "difficulty": "EASY",
+        "xpReward": 100,
+        "timeLimit": 300,
+        "questions": [
+            {
+                "content": "Apa yang dimaksud dengan Fintech Syariah?",
+                "explanation": "Fintech Syariah adalah teknologi finansial yang beroperasi sesuai dengan prinsip-prinsip syariah Islam, menghindari riba, gharar, dan maysir.",
+                "options": [
+                    {
+                        "content": "Teknologi keuangan berbasis bunga",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Teknologi finansial sesuai prinsip syariah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Aplikasi perbankan konvensional",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Platform trading forex",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Manakah yang termasuk kategori Fintech Syariah?",
+                "explanation": "P2P Lending Syariah adalah salah satu kategori fintech syariah yang menghubungkan pemberi dana dengan penerima dana menggunakan akad syariah.",
+                "options": [
+                    {
+                        "content": "Pinjaman online dengan bunga tinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "P2P Lending Syariah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Trading saham biasa",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Kasino online",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Akad yang umum digunakan dalam P2P Lending Syariah adalah...",
+                "explanation": "P2P Lending Syariah umumnya menggunakan akad mudharabah (bagi hasil), musyarakah (kerjasama modal), atau murabahah (jual beli).",
+                "options": [
+                    {
+                        "content": "Akad riba",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Mudharabah, Musyarakah, atau Murabahah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Akad spekulasi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak menggunakan akad",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa peran OJK dalam Fintech Syariah?",
+                "explanation": "OJK (Otoritas Jasa Keuangan) berperan mengawasi dan mengatur fintech syariah untuk memastikan kepatuhan terhadap regulasi dan prinsip syariah.",
+                "options": [
+                    {
+                        "content": "Memberikan pinjaman langsung",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Mengawasi dan mengatur fintech syariah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Menjalankan platform fintech",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak ada peran",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Crowdfunding syariah berbeda dengan crowdfunding konvensional dalam hal...",
+                "explanation": "Crowdfunding syariah menggunakan akad syariah seperti mudharabah atau musyarakah dan menghindari riba, berbeda dengan crowdfunding konvensional yang bisa menggunakan bunga.",
+                "options": [
+                    {
+                        "content": "Jumlah dana yang dikumpulkan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Penggunaan akad syariah dan menghindari riba",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Platform yang digunakan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak ada perbedaan",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Payment Gateway Syariah",
+        "slug": "payment-gateway-syariah",
+        "description": "Memahami sistem pembayaran digital berbasis syariah",
+        "categorySlug": "fintech-syariah",
+        "difficulty": "MEDIUM",
+        "xpReward": 150,
+        "timeLimit": 420,
+        "questions": [
+            {
+                "content": "Apa yang membedakan payment gateway syariah dengan konvensional?",
+                "explanation": "Payment gateway syariah menghindari transaksi yang mengandung riba, gharar, dan maysir, serta memastikan semua biaya transparan dan sesuai syariah.",
+                "options": [
+                    {
+                        "content": "Kecepatan transaksi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Menghindari riba, gharar, dan maysir",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Jumlah merchant",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Teknologi yang digunakan",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Dalam payment gateway syariah, biaya transaksi harus...",
+                "explanation": "Biaya transaksi dalam payment gateway syariah harus jelas (transparan) dan wajar, tidak boleh mengandung unsur gharar atau eksploitasi.",
+                "options": [
+                    {
+                        "content": "Sebesar-besarnya untuk keuntungan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Jelas dan wajar sesuai prinsip syariah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Tersembunyi dari pengguna",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Berubah-ubah tanpa pemberitahuan",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "E-wallet syariah menggunakan prinsip...",
+                "explanation": "E-wallet syariah umumnya menggunakan prinsip wadi'ah (titipan) untuk penyimpanan dana dan qardh (pinjaman kebajikan) untuk transfer dana.",
+                "options": [
+                    {
+                        "content": "Bunga deposito",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Wadi'ah dan Qardh",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Spekulasi mata uang",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Riba terselubung",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa syarat merchant yang dapat menggunakan payment gateway syariah?",
+                "explanation": "Merchant harus menjual produk/jasa halal dan tidak terlibat dalam transaksi yang dilarang syariah seperti judi, minuman keras, dll.",
+                "options": [
+                    {
+                        "content": "Hanya merchant besar",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Menjual produk/jasa halal",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Hanya merchant muslim",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak ada syarat khusus",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Fitur cicilan dalam payment gateway syariah menggunakan akad...",
+                "explanation": "Fitur cicilan dalam payment gateway syariah menggunakan akad murabahah (jual beli dengan margin) atau ijarah (sewa), bukan bunga.",
+                "options": [
+                    {
+                        "content": "Bunga kredit",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Murabahah atau Ijarah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Riba tersembunyi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak ada akad",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Bagaimana payment gateway syariah menangani chargeback?",
+                "explanation": "Chargeback ditangani sesuai prinsip keadilan syariah dengan investigasi yang fair dan pengembalian dana jika terbukti ada kesalahan atau penipuan.",
+                "options": [
+                    {
+                        "content": "Tidak melayani chargeback",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Sesuai prinsip keadilan syariah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Memotong dana merchant secara sepihak",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Mengabaikan keluhan konsumen",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    }
+]

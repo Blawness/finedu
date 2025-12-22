@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import prisma from "@/lib/prisma";
 import { ChevronRight } from "lucide-react";
 
@@ -21,7 +19,6 @@ export default async function QuizPage() {
 
     return (
         <div className="min-h-screen flex flex-col">
-            <Header />
 
             <main className="flex-1 py-12">
                 <div className="container">
@@ -72,8 +69,6 @@ export default async function QuizPage() {
                     </div>
                 </div>
             </main>
-
-            <Footer />
         </div>
     );
 }

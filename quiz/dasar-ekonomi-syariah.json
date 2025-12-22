@@ -1,0 +1,266 @@
+[
+    {
+        "title": "Prinsip Dasar Ekonomi Islam",
+        "slug": "prinsip-dasar-ekonomi-islam",
+        "description": "Memahami prinsip-prinsip fundamental dalam ekonomi Islam",
+        "categorySlug": "dasar-ekonomi-syariah",
+        "difficulty": "EASY",
+        "xpReward": 100,
+        "timeLimit": 300,
+        "questions": [
+            {
+                "content": "Apa yang dimaksud dengan 'riba' dalam ekonomi Islam?",
+                "explanation": "Riba adalah tambahan atau kelebihan yang diambil dari transaksi utang-piutang atau jual beli secara batil. Islam melarang riba karena dianggap tidak adil dan eksploitatif.",
+                "options": [
+                    {
+                        "content": "Keuntungan dari perdagangan yang halal",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tambahan yang diambil dari pinjaman secara batil",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Pembagian hasil usaha antara dua pihak",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Biaya administrasi bank",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa yang dimaksud dengan 'gharar' dalam transaksi syariah?",
+                "explanation": "Gharar adalah ketidakjelasan atau ketidakpastian dalam suatu transaksi. Islam melarang transaksi yang mengandung gharar karena dapat merugikan salah satu pihak.",
+                "options": [
+                    {
+                        "content": "Keuntungan yang berlebihan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Ketidakjelasan atau ketidakpastian dalam transaksi",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Pemberian hadiah",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Simpanan yang aman",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Prinsip dasar ekonomi syariah yang melarang judi disebut...",
+                "explanation": "Maysir adalah segala bentuk perjudian atau spekulasi yang mengandung unsur untung-untungan. Islam melarang maysir karena dapat menyebabkan kerugian dan ketidakadilan.",
+                "options": [
+                    {
+                        "content": "Riba",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Gharar",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Maysir",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Tadlis",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa tujuan utama ekonomi Islam?",
+                "explanation": "Ekonomi Islam bertujuan untuk mencapai kesejahteraan (falah) yang seimbang antara kehidupan dunia dan akhirat, dengan prinsip keadilan dan keberkahan.",
+                "options": [
+                    {
+                        "content": "Memaksimalkan keuntungan pribadi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Mencapai kesejahteraan dunia dan akhirat (falah)",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Mengumpulkan harta sebanyak-banyaknya",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Menguasai pasar global",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Dalam ekonomi Islam, harta dianggap sebagai...",
+                "explanation": "Dalam Islam, harta adalah amanah dari Allah SWT yang harus dikelola dengan baik dan digunakan untuk kebaikan serta kesejahteraan bersama.",
+                "options": [
+                    {
+                        "content": "Milik mutlak individu",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Amanah dari Allah SWT",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Alat untuk menguasai orang lain",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tujuan akhir kehidupan",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Halal dan Haram dalam Ekonomi",
+        "slug": "halal-haram-ekonomi",
+        "description": "Memahami batasan halal dan haram dalam aktivitas ekonomi",
+        "categorySlug": "dasar-ekonomi-syariah",
+        "difficulty": "MEDIUM",
+        "xpReward": 150,
+        "timeLimit": 420,
+        "questions": [
+            {
+                "content": "Manakah dari berikut ini yang termasuk transaksi haram?",
+                "explanation": "Jual beli barang haram seperti minuman keras adalah transaksi yang dilarang dalam Islam, karena objek transaksinya sendiri sudah haram.",
+                "options": [
+                    {
+                        "content": "Jual beli pakaian",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Jual beli makanan halal",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Jual beli minuman keras",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Jual beli buku",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa hukum menjual barang yang tidak dimiliki?",
+                "explanation": "Menjual barang yang tidak dimiliki (bay' ma'dum) dilarang dalam Islam karena mengandung unsur gharar (ketidakpastian) dan dapat merugikan pembeli.",
+                "options": [
+                    {
+                        "content": "Halal tanpa syarat",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Haram karena mengandung gharar",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Makruh",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Mubah",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Dalam jual beli, apa yang dimaksud dengan 'tadlis'?",
+                "explanation": "Tadlis adalah penipuan atau menyembunyikan cacat barang dalam transaksi jual beli. Ini dilarang dalam Islam karena melanggar prinsip kejujuran.",
+                "options": [
+                    {
+                        "content": "Menawar harga",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Penipuan atau menyembunyikan cacat barang",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Memberikan diskon",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Membeli secara kredit",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa syarat utama agar suatu usaha dianggap halal?",
+                "explanation": "Usaha halal harus memenuhi syarat: objek usaha halal, cara memperoleh halal, dan tujuan yang baik. Ketiga aspek ini harus terpenuhi.",
+                "options": [
+                    {
+                        "content": "Menghasilkan keuntungan besar",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Objek, cara, dan tujuan harus halal",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Disetujui pemerintah",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Banyak peminatnya",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Bagaimana hukum monopoli dalam ekonomi Islam?",
+                "explanation": "Monopoli (ihtikar) yang merugikan masyarakat dilarang dalam Islam karena bertentangan dengan prinsip keadilan dan dapat menyebabkan eksploitasi.",
+                "options": [
+                    {
+                        "content": "Diperbolehkan tanpa batasan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Haram jika merugikan masyarakat",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Dianjurkan untuk efisiensi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Makruh",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa yang dimaksud dengan 'najasy' dalam jual beli?",
+                "explanation": "Najasy adalah praktik menaikkan harga dengan cara berpura-pura menawar tinggi tanpa niat membeli, untuk menipu pembeli lain. Ini dilarang dalam Islam.",
+                "options": [
+                    {
+                        "content": "Memberikan bonus kepada pembeli",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Berpura-pura menawar tinggi untuk menipu",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Menjual dengan harga murah",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Membeli dalam jumlah besar",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    }
+]

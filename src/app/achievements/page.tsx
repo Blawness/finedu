@@ -1,6 +1,4 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import { AchievementCard } from "@/components/gamification/AchievementCard";
 import prisma from "@/lib/prisma";
 import { Trophy } from "lucide-react";
@@ -37,7 +35,6 @@ export default async function AchievementsPage() {
 
     return (
         <div className="min-h-screen flex flex-col">
-            <Header />
 
             <main className="flex-1 py-12">
                 <div className="container">
@@ -78,8 +75,6 @@ export default async function AchievementsPage() {
                     </div>
                 </div>
             </main>
-
-            <Footer />
         </div>
     );
 }

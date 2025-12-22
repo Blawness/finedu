@@ -1,0 +1,266 @@
+[
+    {
+        "title": "Dasar Investasi Halal",
+        "slug": "dasar-investasi-halal",
+        "description": "Memahami prinsip-prinsip investasi yang sesuai syariah",
+        "categorySlug": "investasi-halal",
+        "difficulty": "EASY",
+        "xpReward": 100,
+        "timeLimit": 300,
+        "questions": [
+            {
+                "content": "Apa kriteria utama investasi halal?",
+                "explanation": "Investasi halal harus bebas dari riba, gharar, maysir, dan tidak berinvestasi pada bisnis yang diharamkan seperti alkohol, judi, dll.",
+                "options": [
+                    {
+                        "content": "Memberikan return tertinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Bebas riba, gharar, maysir, dan bisnis haram",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Hanya untuk orang kaya",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tanpa risiko sama sekali",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Saham syariah adalah saham dari perusahaan yang...",
+                "explanation": "Saham syariah adalah saham dari perusahaan yang kegiatan usahanya tidak bertentangan dengan prinsip syariah dan memenuhi rasio keuangan syariah.",
+                "options": [
+                    {
+                        "content": "Memberikan dividen tertinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Kegiatan usahanya sesuai prinsip syariah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Hanya dimiliki muslim",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak pernah rugi",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa yang dimaksud dengan sukuk?",
+                "explanation": "Sukuk adalah surat berharga syariah yang merepresentasikan kepemilikan atas aset, bukan utang berbunga seperti obligasi konvensional.",
+                "options": [
+                    {
+                        "content": "Obligasi dengan bunga tinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Surat berharga syariah berbasis aset",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Saham perusahaan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Deposito bank",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Reksadana syariah menginvestasikan dana pada...",
+                "explanation": "Reksadana syariah hanya menginvestasikan dana pada instrumen keuangan yang sesuai syariah seperti saham syariah, sukuk, dan deposito syariah.",
+                "options": [
+                    {
+                        "content": "Semua jenis saham tanpa filter",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Instrumen keuangan sesuai syariah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Obligasi konvensional",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Saham perusahaan alkohol",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa fungsi Daftar Efek Syariah (DES) yang diterbitkan OJK?",
+                "explanation": "DES adalah daftar resmi saham dan efek syariah yang telah lolos screening syariah, memudahkan investor memilih investasi halal.",
+                "options": [
+                    {
+                        "content": "Daftar saham dengan harga tertinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Daftar saham dan efek yang sesuai syariah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Daftar perusahaan BUMN",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Daftar investor kaya",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Analisis Investasi Syariah",
+        "slug": "analisis-investasi-syariah",
+        "description": "Memahami cara menganalisis dan memilih investasi syariah",
+        "categorySlug": "investasi-halal",
+        "difficulty": "MEDIUM",
+        "xpReward": 150,
+        "timeLimit": 420,
+        "questions": [
+            {
+                "content": "Apa yang dimaksud dengan screening syariah?",
+                "explanation": "Screening syariah adalah proses penyaringan untuk memastikan perusahaan memenuhi kriteria bisnis dan rasio keuangan sesuai prinsip syariah.",
+                "options": [
+                    {
+                        "content": "Menyaring saham berdasarkan harga",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Penyaringan berdasarkan kriteria syariah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Memilih saham dengan dividen tertinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Analisis teknikal saham",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Rasio total utang berbasis bunga terhadap total aset dalam screening syariah maksimal...",
+                "explanation": "Dalam screening syariah, rasio total utang berbasis bunga terhadap total aset maksimal 45% agar perusahaan tidak terlalu bergantung pada utang riba.",
+                "options": [
+                    {
+                        "content": "10%",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "45%",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "75%",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "100%",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa yang harus dilakukan jika saham yang dimiliki keluar dari DES?",
+                "explanation": "Jika saham keluar dari DES, investor syariah sebaiknya menjual saham tersebut dalam waktu yang wajar dan memindahkan ke investasi syariah lainnya.",
+                "options": [
+                    {
+                        "content": "Tetap memegangnya selamanya",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Menjual dan pindah ke investasi syariah lain",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Membeli lebih banyak",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Mengabaikan perubahan DES",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Dividen dari saham syariah yang berasal dari pendapatan non-halal harus...",
+                "explanation": "Dividen yang berasal dari pendapatan non-halal (jika ada) harus dikeluarkan untuk tujuan sosial/amal, tidak boleh digunakan untuk kepentingan pribadi.",
+                "options": [
+                    {
+                        "content": "Digunakan untuk investasi lagi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Dikeluarkan untuk tujuan sosial/amal",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Disimpan di bank konvensional",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Diabaikan saja",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa perbedaan sukuk dengan obligasi konvensional?",
+                "explanation": "Sukuk merepresentasikan kepemilikan atas aset dan memberikan bagi hasil, sedangkan obligasi adalah surat utang yang memberikan bunga tetap.",
+                "options": [
+                    {
+                        "content": "Tidak ada perbedaan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Sukuk berbasis aset, obligasi berbasis utang berbunga",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Sukuk lebih berisiko",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Obligasi lebih menguntungkan",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Dalam investasi emas syariah, transaksi yang dilarang adalah...",
+                "explanation": "Jual beli emas secara tidak tunai (kredit) tanpa penyerahan barang dilarang karena mengandung riba dan gharar. Emas harus diserahterimakan saat transaksi.",
+                "options": [
+                    {
+                        "content": "Membeli emas batangan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Jual beli emas tidak tunai tanpa serah terima",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Menyimpan emas di brankas",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Menjual emas dengan harga pasar",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    }
+]
