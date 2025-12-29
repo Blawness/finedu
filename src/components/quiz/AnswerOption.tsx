@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { answerVariants } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 import { Check, X } from "lucide-react";
@@ -34,6 +33,37 @@ export function AnswerOption({
         return "animate";
     };
 
+    // Determine styling based on state
+    const getButtonStyles = () => {
+        // After reveal - show correct answer in green
+        if (isRevealed && isCorrect) {
+            return "bg-emerald-500 hover:bg-emerald-500 text-white border-emerald-500 border-2";
+        }
+        // After reveal - show wrong selection in red
+        if (isRevealed && isSelected && !isCorrect) {
+            return "bg-red-500 hover:bg-red-500 text-white border-red-500 border-2";
+        }
+        // Before reveal - selected state
+        if (!isRevealed && isSelected) {
+            return "bg-primary text-primary-foreground border-primary ring-2 ring-primary ring-offset-2";
+        }
+        // Default - not selected
+        return "bg-background hover:bg-muted border border-input";
+    };
+
+    const getCircleStyles = () => {
+        if (isRevealed && isCorrect) {
+            return "bg-white text-emerald-500";
+        }
+        if (isRevealed && isSelected && !isCorrect) {
+            return "bg-white text-red-500";
+        }
+        if (!isRevealed && isSelected) {
+            return "bg-primary-foreground text-primary";
+        }
+        return "bg-muted text-muted-foreground";
+    };
+
     return (
         <motion.div
             custom={index}
@@ -43,37 +73,44 @@ export function AnswerOption({
             whileHover={!isRevealed && !disabled ? "hover" : undefined}
             whileTap={!isRevealed && !disabled ? "tap" : undefined}
         >
-            <Button
-                variant={isSelected ? "default" : "outline"}
+            <button
+                type="button"
                 className={cn(
-                    "w-full justify-start text-left p-4 h-auto min-h-[60px] transition-all",
-                    isRevealed && isCorrect && "bg-green-500 hover:bg-green-500 text-white border-green-500",
-                    isRevealed && isSelected && !isCorrect && "bg-red-500 hover:bg-red-500 text-white border-red-500",
-                    !isRevealed && isSelected && "ring-2 ring-primary ring-offset-2"
+                    "w-full flex items-center gap-3 text-left p-4 min-h-[60px] rounded-lg transition-all duration-200",
+                    getButtonStyles(),
+                    isRevealed && "cursor-default",
+                    !isRevealed && !disabled && "cursor-pointer hover:scale-[1.01]"
                 )}
                 onClick={onSelect}
                 disabled={isRevealed || disabled}
             >
-                <span className="flex items-center gap-3 w-full">
-                    <span
-                        className={cn(
-                            "flex items-center justify-center w-8 h-8 rounded-full font-bold text-sm shrink-0",
-                            isSelected
-                                ? "bg-primary-foreground text-primary"
-                                : "bg-muted text-muted-foreground"
-                        )}
-                    >
-                        {isRevealed && isCorrect ? (
-                            <Check className="w-4 h-4" />
-                        ) : isRevealed && isSelected && !isCorrect ? (
-                            <X className="w-4 h-4" />
-                        ) : (
-                            letter
-                        )}
-                    </span>
-                    <span className="flex-1">{content}</span>
+                <span
+                    className={cn(
+                        "flex items-center justify-center w-8 h-8 rounded-full font-bold text-sm shrink-0 transition-colors",
+                        getCircleStyles()
+                    )}
+                >
+                    {isRevealed && isCorrect ? (
+                        <Check className="w-5 h-5" strokeWidth={3} />
+                    ) : isRevealed && isSelected && !isCorrect ? (
+                        <X className="w-5 h-5" strokeWidth={3} />
+                    ) : (
+                        letter
+                    )}
                 </span>
-            </Button>
+                <span className="flex-1 font-medium">{content}</span>
+
+                {/* Additional feedback icon on the right */}
+                {isRevealed && (
+                    <span className="ml-auto shrink-0">
+                        {isCorrect ? (
+                            <Check className="w-6 h-6 text-white" strokeWidth={3} />
+                        ) : isSelected && !isCorrect ? (
+                            <X className="w-6 h-6 text-white" strokeWidth={3} />
+                        ) : null}
+                    </span>
+                )}
+            </button>
         </motion.div>
     );
 }

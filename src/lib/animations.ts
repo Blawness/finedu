@@ -47,14 +47,15 @@ export const answerVariants: Variants = {
     hover: { scale: 1.02, transition: { duration: 0.2 } },
     tap: { scale: 0.98 },
     correct: {
-        backgroundColor: "hsl(var(--primary))",
-        scale: [1, 1.05, 1],
-        transition: { duration: 0.5 },
+        opacity: 1,
+        x: 0,
+        scale: [1, 1.02, 1],
+        transition: { duration: 0.3 },
     },
     incorrect: {
-        backgroundColor: "hsl(var(--destructive))",
-        x: [0, -10, 10, -10, 10, 0],
-        transition: { duration: 0.5 },
+        opacity: 1,
+        x: [0, -5, 5, -5, 5, 0],
+        transition: { duration: 0.4 },
     },
 };
 
