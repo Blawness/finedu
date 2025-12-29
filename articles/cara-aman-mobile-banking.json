@@ -1,0 +1,21 @@
+{
+    "title": "Cara Aman Menggunakan Mobile Banking di Indonesia",
+    "slug": "cara-aman-mobile-banking",
+    "category": "perbankan-digital",
+    "author": "Tim FinEdu",
+    "publishedAt": "2024-12-25",
+    "readTime": 6,
+    "excerpt": "Mobile banking memudahkan transaksi, tapi juga memiliki risiko keamanan. Pelajari tips dan trik melindungi akun Anda dari ancaman siber.",
+    "featuredImage": {
+        "url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&q=80",
+        "alt": "Aplikasi mobile banking di smartphone"
+    },
+    "content": "## Ancaman Keamanan Mobile Banking\n\nMobile banking menawarkan kemudahan luar biasa, namun juga menjadi target empuk para penjahat siber. Berikut ancaman yang perlu diwaspadai:\n\n### Jenis-Jenis Ancaman\n\n1. **Phishing** - Penipuan melalui link palsu yang menyerupai situs bank\n2. **Malware** - Aplikasi berbahaya yang mencuri data\n3. **SIM Swap** - Pengambilalihan nomor HP untuk OTP\n4. **Social Engineering** - Manipulasi psikologis untuk mendapat informasi\n5. **Man-in-the-Middle** - Intersepsi data di jaringan publik\n\n## Tips Keamanan Mobile Banking\n\n### 1. Keamanan Perangkat\n\n- **Update OS dan aplikasi** secara berkala\n- **Aktifkan screen lock** dengan PIN/biometrik\n- **Jangan root/jailbreak** perangkat\n- **Install antivirus** terpercaya\n- **Hindari WiFi publik** untuk transaksi\n\n### 2. Keamanan Aplikasi\n\n- **Download hanya dari store resmi** (Play Store/App Store)\n- **Verifikasi developer** adalah bank yang bersangkutan\n- **Aktifkan semua fitur keamanan** yang tersedia\n- **Logout setelah selesai** bertransaksi\n- **Jangan simpan password** di browser\n\n> 🛡️ **Penting**: Jangan pernah memberikan OTP, PIN, atau password kepada siapapun, termasuk yang mengaku petugas bank!\n\n### 3. Keamanan Data\n\n- **Gunakan password unik** untuk mobile banking\n- **Aktifkan 2FA** jika tersedia\n- **Jangan screenshot** data sensitif\n- **Perbarui email & HP** jika ada perubahan\n- **Cek mutasi** secara berkala\n\n## Apa yang Harus Dilakukan Jika Terkena Penipuan?\n\n1. **Hubungi call center bank** segera\n2. **Blokir kartu/akun** untuk sementara\n3. **Ganti semua password** terkait\n4. **Laporkan ke polisi** (cybercrime)\n5. **Simpan bukti-bukti** transaksi mencurigakan\n\n## Fitur Keamanan yang Wajib Diaktifkan\n\n| Fitur | Fungsi | Bank yang Menyediakan |\n|-------|--------|----------------------|\n| Biometric Login | Login dengan sidik jari/wajah | Semua bank besar |\n| Transaction Limit | Batasi nominal transfer | Semua bank |\n| Login Notification | Pemberitahuan jika ada login | BCA, Mandiri, BNI |\n| Device Binding | Kunci akun ke 1 device | BRI, CIMB |\n| Kill Switch | Nonaktifkan akun darurat | Beberapa bank |",
+    "tags": [
+        "mobile-banking",
+        "keamanan-digital",
+        "perbankan",
+        "tips-keamanan"
+    ],
+    "relatedQuizSlug": "perbankan-digital"
+}

@@ -1,0 +1,27 @@
+{
+    "title": "Panduan Lengkap Budgeting dengan Metode 50/30/20",
+    "slug": "panduan-budgeting-50-30-20",
+    "category": "literasi-keuangan",
+    "author": "Tim FinEdu",
+    "publishedAt": "2024-12-29",
+    "readTime": 7,
+    "excerpt": "Pelajari cara mengelola keuangan pribadi dengan metode 50/30/20 yang sederhana namun efektif untuk mencapai kebebasan finansial.",
+    "featuredImage": {
+        "url": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
+        "alt": "Ilustrasi perencanaan keuangan dengan kalkulator dan uang"
+    },
+    "content": "## Apa itu Metode 50/30/20?\n\nMetode 50/30/20 adalah salah satu strategi pengelolaan keuangan paling populer yang diperkenalkan oleh Senator Elizabeth Warren dalam bukunya \"All Your Worth: The Ultimate Lifetime Money Plan\". Metode ini membagi pendapatan bulanan menjadi tiga kategori utama.\n\n### Pembagian Anggaran\n\n- **50% untuk Kebutuhan** - Pengeluaran wajib seperti sewa, listrik, air, makanan pokok, transportasi ke kantor, dan cicilan utang minimum\n- **30% untuk Keinginan** - Hal-hal yang diinginkan tapi tidak esensial seperti hiburan, makan di restoran, subscription streaming, hobi\n- **20% untuk Tabungan & Investasi** - Dana darurat, investasi, tambahan pembayaran utang\n\n### Cara Menerapkan Metode Ini\n\n1. **Hitung Pendapatan Bersih** - Total gaji setelah dipotong pajak dan BPJS\n2. **Kategorikan Pengeluaran** - Pisahkan antara kebutuhan, keinginan, dan tabungan\n3. **Evaluasi dan Sesuaikan** - Jika kebutuhan melebihi 50%, cari cara untuk mengurangi\n4. **Otomatisasi** - Set auto-transfer untuk tabungan di awal bulan\n\n> 💡 **Tips**: Mulai dengan mencatat semua pengeluaran selama 1 bulan untuk mengetahui pola spending Anda sebelum menerapkan metode ini.\n\n### Contoh Penerapan\n\nMisalnya pendapatan bulanan Anda Rp 10.000.000:\n\n| Kategori | Persentase | Jumlah |\n|----------|------------|--------|\n| Kebutuhan | 50% | Rp 5.000.000 |\n| Keinginan | 30% | Rp 3.000.000 |\n| Tabungan | 20% | Rp 2.000.000 |\n\n### Kapan Metode Ini Tidak Cocok?\n\nMetode 50/30/20 mungkin perlu disesuaikan jika:\n- Tinggal di kota besar dengan biaya hidup tinggi\n- Memiliki utang besar yang perlu dilunasi\n- Pendapatan tidak stabil (freelancer, pengusaha)\n\nDalam kasus tersebut, Anda bisa menyesuaikan menjadi 60/20/20 atau 70/20/10 sesuai kondisi.",
+    "tags": [
+        "budgeting",
+        "keuangan-pribadi",
+        "menabung",
+        "perencanaan-keuangan"
+    ],
+    "relatedQuizSlug": "pengenalan-literasi-keuangan",
+    "infographics": [
+        {
+            "title": "Indeks Literasi Keuangan Indonesia 2024",
+            "embedUrl": "https://www.ojk.go.id/id/berita-dan-kegiatan/publikasi/Pages/Survei-Nasional-Literasi-dan-Inklusi-Keuangan-2024.aspx"
+        }
+    ]
+}

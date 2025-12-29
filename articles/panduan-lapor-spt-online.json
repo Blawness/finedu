@@ -1,0 +1,28 @@
+{
+    "title": "Panduan Lapor SPT Tahunan Online untuk Karyawan",
+    "slug": "panduan-lapor-spt-online",
+    "category": "pajak-perencanaan",
+    "author": "Tim FinEdu",
+    "publishedAt": "2024-12-22",
+    "readTime": 8,
+    "excerpt": "Deadline SPT segera tiba! Ikuti panduan lengkap cara lapor SPT tahunan secara online melalui e-Filing DJP untuk karyawan dengan penghasilan tetap.",
+    "featuredImage": {
+        "url": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80",
+        "alt": "Dokumen pajak dan perhitungan SPT"
+    },
+    "content": "## Apa itu SPT Tahunan?\n\n**SPT (Surat Pemberitahuan) Tahunan** adalah laporan pajak penghasilan yang wajib disampaikan oleh Wajib Pajak setiap tahun. Batas waktu pelaporan untuk karyawan (orang pribadi) adalah **31 Maret**.\n\n### Siapa yang Wajib Lapor?\n\n- Memiliki NPWP\n- Memiliki penghasilan di atas PTKP (Penghasilan Tidak Kena Pajak)\n- Sudah bekerja/berpenghasilan pada tahun pajak tersebut\n\n## Jenis Formulir SPT untuk Karyawan\n\n### 1770 SS (Sangat Sederhana)\n- Penghasilan bruto ≤ Rp 60 juta/tahun\n- Hanya dari 1 pemberi kerja\n- Tidak punya penghasilan lain\n\n### 1770 S (Sederhana)\n- Penghasilan bruto > Rp 60 juta/tahun\n- Bisa dari lebih dari 1 pemberi kerja\n- Punya penghasilan lain (bunga, sewa, dll)\n\n## Langkah-Langkah Lapor SPT Online\n\n### Persiapan\n\n1. **Siapkan dokumen**:\n   - Bukti potong 1721-A1 dari perusahaan\n   - NPWP\n   - Daftar harta dan utang\n   - Bukti potong lainnya (jika ada)\n\n2. **Pastikan akun DJP Online aktif**:\n   - Kunjungi djponline.pajak.go.id\n   - Login dengan NPWP dan password\n   - Jika lupa password, reset via email\n\n### Proses Pelaporan\n\n1. **Login ke DJP Online**\n2. **Pilih menu \"Lapor\"** → e-Filing\n3. **Pilih \"Buat SPT\"**\n4. **Jawab pertanyaan wizard** untuk menentukan jenis formulir\n5. **Isi data sesuai bukti potong**:\n   - Penghasilan bruto\n   - Pengurang (biaya jabatan, iuran pensiun)\n   - PPh yang sudah dipotong\n6. **Isi daftar harta** (tabungan, kendaraan, properti)\n7. **Isi daftar utang** (KPR, KTA, kartu kredit)\n8. **Review dan kirim**\n9. **Simpan BPE** (Bukti Penerimaan Elektronik)\n\n> ⚠️ **Penting**: Deadline pelaporan SPT Orang Pribadi adalah 31 Maret. Keterlambatan dikenakan denda Rp 100.000.\n\n## Tips Mengisi SPT\n\n1. **Minta bukti potong 1721-A1** dari HRD maksimal Januari\n2. **Catat harta secara detail** (nomor rekening, plat kendaraan)\n3. **Jangan lupa penghasilan bunga** dari tabungan/deposito\n4. **Simpan BPE dengan baik** sebagai bukti pelaporan\n5. **Lapor lebih awal** untuk menghindari server sibuk\n\n## FAQ SPT Karyawan\n\n**Q: Apakah harta istri harus dilaporkan?**\nA: Ya, jika NPWP digabung. Tidak, jika NPWP terpisah.\n\n**Q: Bagaimana jika kurang bayar?**\nA: Bayar via e-Billing sebelum lapor SPT.\n\n**Q: Apakah freelance job harus dilaporkan?**\nA: Ya, sebagai penghasilan lainnya.",
+    "tags": [
+        "pajak",
+        "spt-tahunan",
+        "e-filing",
+        "karyawan",
+        "djp-online"
+    ],
+    "relatedQuizSlug": "pajak-perencanaan",
+    "infographics": [
+        {
+            "title": "Statistik Kepatuhan Pajak Indonesia",
+            "embedUrl": "https://www.pajak.go.id/id/statistik-kepatuhan-spt"
+        }
+    ]
+}

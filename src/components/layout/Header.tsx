@@ -33,6 +33,7 @@ export function Header() {
 
     const navItems = [
         { label: "Beranda", href: "/" },
+        { label: "Artikel", href: "/artikel" },
         { label: "Quiz", href: "/quiz" },
         { label: "Leaderboard", href: "/leaderboard" },
         { label: "Achievements", href: "/achievements" },

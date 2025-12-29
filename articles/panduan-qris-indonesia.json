@@ -1,0 +1,27 @@
+{
+    "title": "Panduan Lengkap QRIS: Cara Kerja dan Keamanannya",
+    "slug": "panduan-qris-indonesia",
+    "category": "fintech-ewallet",
+    "author": "Tim FinEdu",
+    "publishedAt": "2024-12-27",
+    "readTime": 5,
+    "excerpt": "QRIS menyatukan semua pembayaran QR di Indonesia. Pelajari cara kerja, keuntungan, dan tips keamanan menggunakan QRIS.",
+    "featuredImage": {
+        "url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+        "alt": "Pembayaran menggunakan QR code di smartphone"
+    },
+    "content": "## Apa itu QRIS?\n\n**QRIS (Quick Response Code Indonesian Standard)** adalah standar QR Code pembayaran nasional yang dikembangkan oleh Bank Indonesia. Diluncurkan pada 17 Agustus 2019, QRIS menyatukan berbagai QR Code dari berbagai penyelenggara jasa sistem pembayaran.\n\n### Sebelum vs Sesudah QRIS\n\n**Sebelum QRIS:**\n- Merchant perlu menyediakan banyak QR dari berbagai penyedia\n- Konsumen bingung memilih aplikasi pembayaran\n- Tidak ada standarisasi keamanan\n\n**Sesudah QRIS:**\n- Satu QR untuk semua aplikasi pembayaran\n- Konsumen bebas memilih e-wallet favorit\n- Standar keamanan nasional\n\n## Cara Kerja QRIS\n\n1. **Merchant menampilkan QR QRIS** - Bisa statis (cetak) atau dinamis (layar)\n2. **Konsumen scan dengan aplikasi** - GoPay, OVO, DANA, ShopeePay, m-banking, dll\n3. **Masukkan nominal** - Untuk QR statis, nominal diinput manual\n4. **Konfirmasi dan bayar** - Transaksi diproses dalam hitungan detik\n5. **Notifikasi** - Merchant dan konsumen menerima konfirmasi\n\n> 💡 **Tips**: Selalu pastikan nama merchant yang tertera sesuai dengan toko tempat Anda berbelanja sebelum konfirmasi pembayaran.\n\n## Keuntungan Menggunakan QRIS\n\n### Bagi Konsumen\n- **Praktis** - Tidak perlu bawa uang tunai\n- **Fleksibel** - Bisa pakai aplikasi apa saja\n- **Aman** - Dilindungi sistem keamanan BI\n- **Tercatat** - Riwayat transaksi jelas\n\n### Bagi Merchant\n- **Efisien** - Satu QR untuk semua pembayaran\n- **Murah** - Biaya MDR hanya 0.7% (UMKM)\n- **Cepat** - Dana masuk real-time\n- **Mudah** - Pendaftaran gratis dan cepat\n\n## Tips Keamanan Transaksi QRIS\n\n1. **Verifikasi nama merchant** sebelum bayar\n2. **Jangan bagikan OTP** kepada siapapun\n3. **Gunakan PIN/biometrik** untuk otorisasi\n4. **Screenshot bukti bayar** untuk referensi\n5. **Laporkan QR mencurigakan** ke BI atau penyedia layanan",
+    "tags": [
+        "qris",
+        "pembayaran-digital",
+        "e-wallet",
+        "bank-indonesia"
+    ],
+    "relatedQuizSlug": "fintech-ewallet",
+    "infographics": [
+        {
+            "title": "Statistik Transaksi QRIS 2024",
+            "embedUrl": "https://www.bi.go.id/id/statistik/sistem-pembayaran/qris/default.aspx"
+        }
+    ]
+}
