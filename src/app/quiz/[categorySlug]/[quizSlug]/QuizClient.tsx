@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -11,7 +12,7 @@ import { AnswerOption } from "@/components/quiz/AnswerOption";
 import { Timer } from "@/components/quiz/Timer";
 import { pageTransition, xpPopupVariants } from "@/lib/animations";
 import { getDifficultyColor, getDifficultyLabel } from "@/lib/gamification";
-import { ChevronLeft, ChevronRight, Trophy, RotateCcw, Home, Zap } from "lucide-react";
+import { ChevronLeft, ChevronRight, Trophy, RotateCcw, Home, Zap, Flame, Loader2 } from "lucide-react";
 
 interface Question {
     id: number;
@@ -44,6 +45,7 @@ interface QuizClientProps {
 
 export default function QuizClient({ quiz }: QuizClientProps) {
     const router = useRouter();
+    const { data: session } = useSession();
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
     const [isRevealed, setIsRevealed] = useState(false);
@@ -52,8 +54,48 @@ export default function QuizClient({ quiz }: QuizClientProps) {
     const [timeTaken, setTimeTaken] = useState(0);
     const [startTime] = useState(Date.now());
 
+    // New states for submission
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitResult, setSubmitResult] = useState<{
+        score: number;
+        xpEarned: number;
+        newTotalXP: number;
+        streak: { current: number; longest: number };
+        levelUp: { level: number; title: string } | null;
+    } | null>(null);
+
     const currentQuestion = quiz.questions[currentQuestionIndex];
     const progress = ((currentQuestionIndex + 1) / quiz.questions.length) * 100;
+
+    // Submit quiz to API when completed
+    useEffect(() => {
+        if (isCompleted && !submitResult && !isSubmitting && session?.user) {
+            const submitQuiz = async () => {
+                setIsSubmitting(true);
+                try {
+                    const response = await fetch("/api/quiz/submit", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                            quizId: quiz.id,
+                            answers: selectedAnswers,
+                            timeTaken
+                        })
+                    });
+
+                    if (response.ok) {
+                        const data = await response.json();
+                        setSubmitResult(data);
+                    }
+                } catch (error) {
+                    console.error("Failed to submit quiz:", error);
+                } finally {
+                    setIsSubmitting(false);
+                }
+            };
+            submitQuiz();
+        }
+    }, [isCompleted, submitResult, isSubmitting, session, quiz.id, selectedAnswers, timeTaken]);
 
     const handleSelectAnswer = (optionId: number) => {
         if (isRevealed) return;
@@ -87,7 +129,7 @@ export default function QuizClient({ quiz }: QuizClientProps) {
         setIsCompleted(true);
     }, [startTime]);
 
-    // Calculate score
+    // Calculate local score for display
     const calculateScore = () => {
         let correct = 0;
         quiz.questions.forEach((q) => {
@@ -104,8 +146,10 @@ export default function QuizClient({ quiz }: QuizClientProps) {
         };
     };
 
-    const score = calculateScore();
-    const earnedXP = Math.round((score.percentage / 100) * quiz.xpReward);
+    const localScore = calculateScore();
+    // Use server result if available, otherwise fallback to local calculation
+    const displayScore = submitResult?.score ?? localScore.percentage;
+    const displayXP = submitResult?.xpEarned ?? Math.round((localScore.percentage / 100) * quiz.xpReward);
 
     if (isCompleted) {
         return (
@@ -123,44 +167,81 @@ export default function QuizClient({ quiz }: QuizClientProps) {
                         <CardTitle className="text-2xl">Quiz Selesai!</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-6">
-                        <div className="text-6xl font-bold text-primary">
-                            {score.percentage}%
-                        </div>
-                        <p className="text-muted-foreground">
-                            Anda menjawab {score.correct} dari {score.total} pertanyaan dengan benar
-                        </p>
+                        {isSubmitting ? (
+                            <div className="flex flex-col items-center gap-4 py-8">
+                                <Loader2 className="w-8 h-8 animate-spin text-primary" />
+                                <p className="text-muted-foreground">Menyimpan hasil...</p>
+                            </div>
+                        ) : (
+                            <>
+                                <div className="text-6xl font-bold text-primary">
+                                    {displayScore}%
+                                </div>
+                                <p className="text-muted-foreground">
+                                    Anda menjawab {localScore.correct} dari {localScore.total} pertanyaan dengan benar
+                                </p>
 
-                        <motion.div
-                            variants={xpPopupVariants}
-                            initial="initial"
-                            animate="animate"
-                            className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/10 rounded-full text-amber-500 font-semibold"
-                        >
-                            <Zap className="w-5 h-5 fill-current" />
-                            +{earnedXP} XP
-                        </motion.div>
+                                <div className="flex justify-center gap-4 flex-wrap">
+                                    <motion.div
+                                        variants={xpPopupVariants}
+                                        initial="initial"
+                                        animate="animate"
+                                        className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/10 rounded-full text-amber-500 font-semibold"
+                                    >
+                                        <Zap className="w-5 h-5 fill-current" />
+                                        +{displayXP} XP
+                                    </motion.div>
 
-                        <div className="text-sm text-muted-foreground">
-                            Waktu: {Math.floor(timeTaken / 60)}:{(timeTaken % 60).toString().padStart(2, "0")}
-                        </div>
+                                    {submitResult?.streak && submitResult.streak.current > 0 && (
+                                        <motion.div
+                                            initial={{ opacity: 0, scale: 0.8 }}
+                                            animate={{ opacity: 1, scale: 1 }}
+                                            transition={{ delay: 0.2 }}
+                                            className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 rounded-full text-orange-500 font-semibold"
+                                        >
+                                            <Flame className="w-5 h-5 fill-current" />
+                                            {submitResult.streak.current} hari streak
+                                        </motion.div>
+                                    )}
+                                </div>
 
-                        <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                            <Button
-                                variant="outline"
-                                className="flex-1"
-                                onClick={() => router.push(`/quiz/${quiz.category.slug}`)}
-                            >
-                                <RotateCcw className="w-4 h-4 mr-2" />
-                                Quiz Lainnya
-                            </Button>
-                            <Button
-                                className="flex-1"
-                                onClick={() => router.push("/")}
-                            >
-                                <Home className="w-4 h-4 mr-2" />
-                                Beranda
-                            </Button>
-                        </div>
+                                {submitResult?.levelUp && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: 0.4 }}
+                                        className="p-4 bg-gradient-to-r from-primary/10 to-amber-500/10 rounded-lg border border-primary/20"
+                                    >
+                                        <p className="text-lg font-bold text-primary">🎉 Level Up!</p>
+                                        <p className="text-sm text-muted-foreground">
+                                            Selamat! Anda naik ke Level {submitResult.levelUp.level} - {submitResult.levelUp.title}
+                                        </p>
+                                    </motion.div>
+                                )}
+
+                                <div className="text-sm text-muted-foreground">
+                                    Waktu: {Math.floor(timeTaken / 60)}:{(timeTaken % 60).toString().padStart(2, "0")}
+                                </div>
+
+                                <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                                    <Button
+                                        variant="outline"
+                                        className="flex-1"
+                                        onClick={() => router.push(`/quiz/${quiz.category.slug}`)}
+                                    >
+                                        <RotateCcw className="w-4 h-4 mr-2" />
+                                        Quiz Lainnya
+                                    </Button>
+                                    <Button
+                                        className="flex-1"
+                                        onClick={() => router.push("/")}
+                                    >
+                                        <Home className="w-4 h-4 mr-2" />
+                                        Beranda
+                                    </Button>
+                                </div>
+                            </>
+                        )}
                     </CardContent>
                 </Card>
             </motion.div>
