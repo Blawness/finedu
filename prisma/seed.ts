@@ -108,6 +108,38 @@ async function main() {
         color: "#06b6d4",
       },
     }),
+    prisma.category.upsert({
+      where: { slug: "fintech-syariah" },
+      update: {
+        name: "Fintech Syariah",
+        description: "Layanan keuangan digital berbasis prinsip syariah",
+        icon: "🌙",
+        color: "#059669",
+      },
+      create: {
+        name: "Fintech Syariah",
+        slug: "fintech-syariah",
+        description: "Layanan keuangan digital berbasis prinsip syariah",
+        icon: "🌙",
+        color: "#059669",
+      },
+    }),
+    prisma.category.upsert({
+      where: { slug: "zakat-digital" },
+      update: {
+        name: "Zakat & Wakaf Digital",
+        description: "Pengelolaan zakat dan wakaf melalui platform digital",
+        icon: "🤝",
+        color: "#0891b2",
+      },
+      create: {
+        name: "Zakat & Wakaf Digital",
+        slug: "zakat-digital",
+        description: "Pengelolaan zakat dan wakaf melalui platform digital",
+        icon: "🤝",
+        color: "#0891b2",
+      },
+    }),
   ]);
 
   console.log(`✅ Created ${categories.length} categories`);
