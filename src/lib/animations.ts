@@ -44,8 +44,8 @@ export const answerVariants: Variants = {
         x: 0,
         transition: { delay: i * 0.1, duration: 0.3 },
     }),
-    hover: { scale: 1.02, transition: { duration: 0.2 } },
-    tap: { scale: 0.98 },
+    hover: { opacity: 1, x: 0, scale: 1.02, transition: { duration: 0.2 } },
+    tap: { opacity: 1, x: 0, scale: 0.98 },
     correct: {
         opacity: 1,
         x: 0,

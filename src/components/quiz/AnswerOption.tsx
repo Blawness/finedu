@@ -27,7 +27,7 @@ export function AnswerOption({
     const letter = String.fromCharCode(65 + index);
 
     const getVariantState = () => {
-        if (!isRevealed) return isSelected ? "tap" : "animate";
+        if (!isRevealed) return "animate";
         if (isSelected) return isCorrect ? "correct" : "incorrect";
         if (isCorrect) return "correct";
         return "animate";
@@ -79,7 +79,7 @@ export function AnswerOption({
                     "w-full flex items-center gap-3 text-left p-4 min-h-[60px] rounded-lg transition-all duration-200",
                     getButtonStyles(),
                     isRevealed && "cursor-default",
-                    !isRevealed && !disabled && "cursor-pointer hover:scale-[1.01]"
+                    !isRevealed && !disabled && "cursor-pointer"
                 )}
                 onClick={onSelect}
                 disabled={isRevealed || disabled}
