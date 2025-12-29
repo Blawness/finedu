@@ -1,0 +1,244 @@
+[
+    {
+        "title": "Pengenalan Literasi Keuangan",
+        "slug": "pengenalan-literasi-keuangan",
+        "description": "Memahami dasar-dasar pengelolaan keuangan pribadi",
+        "categorySlug": "dasar-literasi-keuangan",
+        "difficulty": "EASY",
+        "xpReward": 100,
+        "timeLimit": 300,
+        "questions": [
+            {
+                "content": "Apa yang dimaksud dengan 'budgeting'?",
+                "explanation": "Budgeting adalah proses merencanakan dan mengontrol pengeluaran dengan membuat anggaran untuk memenuhi kebutuhan dan tujuan finansial.",
+                "options": [
+                    {
+                        "content": "Meminjam uang dari bank",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Merencanakan dan mengontrol pemasukan serta pengeluaran",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Investasi saham di bursa efek",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Menabung semua pendapatan",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Berapa jumlah ideal dana darurat?",
+                "explanation": "Dana darurat idealnya 3-6 bulan pengeluaran untuk mengantisipasi situasi darurat seperti kehilangan pekerjaan atau biaya medis tak terduga.",
+                "options": [
+                    {
+                        "content": "1 bulan pengeluaran",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "3-6 bulan pengeluaran",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "10% dari gaji",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Rp 1 juta saja cukup",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Prinsip 50/30/20 dalam budgeting artinya...",
+                "explanation": "50% untuk kebutuhan, 30% untuk keinginan, dan 20% untuk tabungan/investasi.",
+                "options": [
+                    {
+                        "content": "50% tabungan, 30% investasi, 20% pengeluaran",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "50% kebutuhan, 30% keinginan, 20% tabungan/investasi",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "50% makan, 30% transportasi, 20% hiburan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Jumlah cicilan maksimal",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa perbedaan 'kebutuhan' dan 'keinginan'?",
+                "explanation": "Kebutuhan adalah hal esensial (makanan, tempat tinggal), sedangkan keinginan adalah hal yang diinginkan tapi tidak wajib (gadget terbaru).",
+                "options": [
+                    {
+                        "content": "Tidak ada perbedaan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Kebutuhan = esensial, Keinginan = tidak wajib",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Kebutuhan lebih mahal",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Keinginan lebih penting",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu compound interest (bunga majemuk)?",
+                "explanation": "Bunga yang dihitung dari pokok ditambah bunga sebelumnya, membuat investasi tumbuh lebih cepat karena 'bunga berbunga'.",
+                "options": [
+                    {
+                        "content": "Bunga tetap yang tidak berubah",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Bunga dari pokok plus bunga sebelumnya",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Biaya administrasi bank",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Penalti keterlambatan",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Menabung dan Dana Darurat",
+        "slug": "menabung-dana-darurat",
+        "description": "Strategi menabung dan membangun dana darurat yang efektif",
+        "categorySlug": "dasar-literasi-keuangan",
+        "difficulty": "MEDIUM",
+        "xpReward": 150,
+        "timeLimit": 420,
+        "questions": [
+            {
+                "content": "Di mana sebaiknya menyimpan dana darurat?",
+                "explanation": "Dana darurat harus mudah diakses tapi terpisah dari rekening harian. Tabungan atau deposito adalah pilihan yang tepat.",
+                "options": [
+                    {
+                        "content": "Saham yang mudah dijual",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tabungan atau deposito yang mudah dicairkan",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Properti",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Dompet di rumah",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Metode 'Pay Yourself First' artinya...",
+                "explanation": "Menyisihkan tabungan terlebih dahulu sebelum menggunakan uang untuk keperluan lain.",
+                "options": [
+                    {
+                        "content": "Membeli barang untuk diri sendiri",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Menabung dulu sebelum belanja",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Membayar cicilan pertama",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Gaji pertama untuk liburan",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Inflasi mempengaruhi tabungan dengan cara...",
+                "explanation": "Inflasi mengurangi daya beli uang. Jika bunga tabungan lebih rendah dari inflasi, nilai riil tabungan berkurang.",
+                "options": [
+                    {
+                        "content": "Menambah nilai tabungan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Mengurangi daya beli uang",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Tidak berpengaruh sama sekali",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Hanya mempengaruhi orang kaya",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa keuntungan memiliki dana darurat?",
+                "explanation": "Dana darurat memberikan ketenangan pikiran dan menghindari utang saat ada kejadian tak terduga.",
+                "options": [
+                    {
+                        "content": "Bisa belanja lebih banyak",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Ketenangan dan menghindari utang darurat",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Mendapat bunga tinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak perlu kerja lagi",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Berapa lama idealnya membangun dana darurat?",
+                "explanation": "Fokus membangun dana darurat secepat mungkin, target 6-12 bulan untuk mencapai 3-6 bulan pengeluaran.",
+                "options": [
+                    {
+                        "content": "Selesai dalam 1 minggu",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "6-12 bulan dengan konsisten menabung",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Tidak perlu ditargetkan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Setelah pensiun saja",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    }
+]

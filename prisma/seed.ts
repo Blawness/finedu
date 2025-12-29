@@ -8,72 +8,102 @@ async function main() {
   // Create Categories
   const categories = await Promise.all([
     prisma.category.upsert({
-      where: { slug: "dasar-ekonomi-syariah" },
-      update: {},
+      where: { slug: "dasar-literasi-keuangan" },
+      update: {
+        name: "Dasar Literasi Keuangan",
+        description: "Pelajari konsep dasar keuangan: budgeting, menabung, dan pengelolaan keuangan pribadi",
+        icon: "📖",
+        color: "#10b981",
+      },
       create: {
-        name: "Dasar Ekonomi Syariah",
-        slug: "dasar-ekonomi-syariah",
+        name: "Dasar Literasi Keuangan",
+        slug: "dasar-literasi-keuangan",
         description:
-          "Pelajari prinsip dasar ekonomi Islam: halal/haram, riba, gharar, dan maysir",
+          "Pelajari konsep dasar keuangan: budgeting, menabung, dan pengelolaan keuangan pribadi",
         icon: "📖",
         color: "#10b981",
       },
     }),
     prisma.category.upsert({
-      where: { slug: "perbankan-syariah" },
-      update: {},
+      where: { slug: "perbankan-digital" },
+      update: {
+        name: "Perbankan Digital",
+        description: "Mobile banking, transfer, dan berbagai layanan bank digital di Indonesia",
+        icon: "🏦",
+        color: "#3b82f6",
+      },
       create: {
-        name: "Perbankan Syariah",
-        slug: "perbankan-syariah",
+        name: "Perbankan Digital",
+        slug: "perbankan-digital",
         description:
-          "Memahami akad-akad dalam perbankan syariah: mudharabah, murabahah, musyarakah, wadi'ah",
+          "Mobile banking, transfer, dan berbagai layanan bank digital di Indonesia",
         icon: "🏦",
         color: "#3b82f6",
       },
     }),
     prisma.category.upsert({
-      where: { slug: "fintech-syariah" },
-      update: {},
+      where: { slug: "fintech-ewallet" },
+      update: {
+        name: "Fintech & E-Wallet",
+        description: "E-wallet, payment gateway, QRIS, dan pinjaman online di Indonesia",
+        icon: "📱",
+        color: "#8b5cf6",
+      },
       create: {
-        name: "Fintech Syariah",
-        slug: "fintech-syariah",
+        name: "Fintech & E-Wallet",
+        slug: "fintech-ewallet",
         description:
-          "P2P lending syariah, crowdfunding, dan payment gateway berbasis syariah",
+          "E-wallet, payment gateway, QRIS, dan pinjaman online di Indonesia",
         icon: "📱",
         color: "#8b5cf6",
       },
     }),
     prisma.category.upsert({
-      where: { slug: "investasi-halal" },
-      update: {},
+      where: { slug: "investasi-saham" },
+      update: {
+        name: "Investasi & Saham",
+        description: "Saham, reksadana, obligasi, dan instrumen investasi lainnya",
+        icon: "📈",
+        color: "#f59e0b",
+      },
       create: {
-        name: "Investasi Halal",
-        slug: "investasi-halal",
+        name: "Investasi & Saham",
+        slug: "investasi-saham",
         description:
-          "Saham syariah, sukuk, reksadana syariah, dan instrumen investasi halal lainnya",
+          "Saham, reksadana, obligasi, dan instrumen investasi lainnya",
         icon: "📈",
         color: "#f59e0b",
       },
     }),
     prisma.category.upsert({
-      where: { slug: "asuransi-syariah" },
-      update: {},
+      where: { slug: "asuransi-proteksi" },
+      update: {
+        name: "Asuransi & Proteksi",
+        description: "Jenis asuransi, cara klaim, dan manfaat proteksi keuangan",
+        icon: "🛡️",
+        color: "#ef4444",
+      },
       create: {
-        name: "Asuransi Syariah",
-        slug: "asuransi-syariah",
-        description: "Takaful, hibah, dan konsep asuransi berbasis syariah",
+        name: "Asuransi & Proteksi",
+        slug: "asuransi-proteksi",
+        description: "Jenis asuransi, cara klaim, dan manfaat proteksi keuangan",
         icon: "🛡️",
         color: "#ef4444",
       },
     }),
     prisma.category.upsert({
-      where: { slug: "zakat-digital" },
-      update: {},
+      where: { slug: "pajak-perencanaan" },
+      update: {
+        name: "Pajak & Perencanaan",
+        description: "Pajak penghasilan, NPWP, dan perencanaan keuangan jangka panjang",
+        icon: "💰",
+        color: "#06b6d4",
+      },
       create: {
-        name: "Zakat Digital",
-        slug: "zakat-digital",
+        name: "Pajak & Perencanaan",
+        slug: "pajak-perencanaan",
         description:
-          "Perhitungan zakat, platform digital, infaq dan sedekah online",
+          "Pajak penghasilan, NPWP, dan perencanaan keuangan jangka panjang",
         icon: "💰",
         color: "#06b6d4",
       },
@@ -82,15 +112,15 @@ async function main() {
 
   console.log(`✅ Created ${categories.length} categories`);
 
-  // Create sample quiz for "Dasar Ekonomi Syariah"
+  // Create sample quiz for "Dasar Literasi Keuangan"
   const quiz1 = await prisma.quiz.upsert({
-    where: { slug: "pengenalan-ekonomi-syariah" },
+    where: { slug: "pengenalan-literasi-keuangan" },
     update: {},
     create: {
-      title: "Pengenalan Ekonomi Syariah",
-      slug: "pengenalan-ekonomi-syariah",
+      title: "Pengenalan Literasi Keuangan",
+      slug: "pengenalan-literasi-keuangan",
       description:
-        "Quiz dasar untuk memahami konsep-konsep fundamental dalam ekonomi syariah",
+        "Quiz dasar untuk memahami konsep-konsep fundamental dalam pengelolaan keuangan pribadi",
       categoryId: categories[0].id,
       difficulty: "EASY",
       xpReward: 100,
@@ -101,68 +131,67 @@ async function main() {
   // Create questions for quiz1
   const questions = [
     {
-      content: "Apa yang dimaksud dengan 'riba' dalam ekonomi Islam?",
+      content: "Apa yang dimaksud dengan 'budgeting' dalam keuangan pribadi?",
       explanation:
-        "Riba adalah tambahan atau kelebihan yang diambil dari transaksi utang-piutang atau jual beli secara batil. Islam melarang riba karena dianggap tidak adil dan eksploitatif.",
+        "Budgeting adalah proses merencanakan dan mengontrol pengeluaran dengan membuat anggaran. Ini membantu memastikan uang digunakan secara efektif untuk memenuhi kebutuhan dan tujuan finansial.",
       options: [
-        { content: "Keuntungan dari perdagangan yang halal", isCorrect: false },
+        { content: "Meminjam uang dari bank", isCorrect: false },
         {
-          content: "Tambahan yang diambil dari pinjaman secara batil",
+          content: "Merencanakan dan mengontrol pemasukan serta pengeluaran",
           isCorrect: true,
         },
-        { content: "Pembagian hasil usaha antara dua pihak", isCorrect: false },
-        { content: "Biaya administrasi bank", isCorrect: false },
+        { content: "Investasi saham di bursa efek", isCorrect: false },
+        { content: "Menabung semua pendapatan", isCorrect: false },
       ],
     },
     {
-      content: "Apa perbedaan utama antara bank syariah dan bank konvensional?",
+      content: "Berapa persentase ideal untuk dana darurat dari pengeluaran bulanan?",
       explanation:
-        "Bank syariah tidak menggunakan sistem bunga (riba) melainkan menggunakan sistem bagi hasil (profit sharing) yang sesuai dengan prinsip syariah.",
+        "Idealnya, dana darurat sebesar 3-6 bulan pengeluaran. Ini untuk mengantisipasi situasi darurat seperti kehilangan pekerjaan atau biaya medis tak terduga.",
       options: [
         {
-          content: "Bank syariah tidak memberikan pinjaman",
+          content: "1 bulan pengeluaran",
           isCorrect: false,
         },
         {
-          content: "Bank syariah menggunakan sistem bagi hasil, bukan bunga",
+          content: "3-6 bulan pengeluaran",
           isCorrect: true,
         },
-        { content: "Bank syariah hanya untuk muslim", isCorrect: false },
-        { content: "Bank syariah tidak memiliki ATM", isCorrect: false },
+        { content: "10% dari gaji bulanan", isCorrect: false },
+        { content: "50% dari total aset", isCorrect: false },
       ],
     },
     {
-      content: "Apa yang dimaksud dengan 'gharar' dalam transaksi syariah?",
+      content: "Apa perbedaan antara 'kebutuhan' dan 'keinginan' dalam keuangan?",
       explanation:
-        "Gharar adalah ketidakjelasan atau ketidakpastian dalam suatu transaksi. Islam melarang transaksi yang mengandung gharar karena dapat merugikan salah satu pihak.",
+        "Kebutuhan adalah hal esensial untuk hidup (makanan, tempat tinggal, kesehatan), sedangkan keinginan adalah hal yang diinginkan tapi tidak wajib (gadget terbaru, liburan mewah).",
       options: [
-        { content: "Keuntungan yang berlebihan", isCorrect: false },
-        { content: "Ketidakjelasan atau ketidakpastian", isCorrect: true },
-        { content: "Pemberian hadiah", isCorrect: false },
-        { content: "Simpanan yang aman", isCorrect: false },
+        { content: "Tidak ada perbedaan", isCorrect: false },
+        { content: "Kebutuhan = esensial, Keinginan = tidak wajib", isCorrect: true },
+        { content: "Kebutuhan lebih mahal dari keinginan", isCorrect: false },
+        { content: "Keinginan lebih penting dari kebutuhan", isCorrect: false },
       ],
     },
     {
-      content: "Akad mudharabah adalah bentuk kerjasama antara...",
+      content: "Apa itu compound interest (bunga majemuk)?",
       explanation:
-        "Mudharabah adalah kerjasama antara pemilik modal (shahibul maal) dan pengelola dana (mudharib) dengan pembagian keuntungan sesuai kesepakatan.",
+        "Compound interest adalah bunga yang dihitung dari pokok ditambah bunga sebelumnya. Ini membuat investasi tumbuh lebih cepat seiring waktu karena 'bunga berbunga'.",
       options: [
-        { content: "Penjual dan pembeli", isCorrect: false },
-        { content: "Pemilik modal dan pengelola dana", isCorrect: true },
-        { content: "Bank dan nasabah", isCorrect: false },
-        { content: "Pegawai dan perusahaan", isCorrect: false },
+        { content: "Bunga tetap yang tidak berubah", isCorrect: false },
+        { content: "Bunga yang dihitung dari pokok plus bunga sebelumnya", isCorrect: true },
+        { content: "Biaya administrasi bank", isCorrect: false },
+        { content: "Penalti keterlambatan pembayaran", isCorrect: false },
       ],
     },
     {
-      content:
-        "Prinsip dasar ekonomi syariah yang melarang judi disebut...",
+      content: "Prinsip 50/30/20 dalam budgeting artinya...",
       explanation:
-        "Maysir adalah segala bentuk perjudian atau spekulasi yang mengandung unsur untung-untungan. Islam melarang maysir karena dapat menyebabkan kerugian dan ketidakadilan.",
+        "Prinsip 50/30/20 adalah panduan alokasi pendapatan: 50% untuk kebutuhan, 30% untuk keinginan, dan 20% untuk tabungan/investasi.",
       options: [
-        { content: "Riba", isCorrect: false },
-        { content: "Gharar", isCorrect: false },
-        { content: "Maysir", isCorrect: true },
-        { content: "Tadlis", isCorrect: false },
+        { content: "50% tabungan, 30% investasi, 20% pengeluaran", isCorrect: false },
+        { content: "50% kebutuhan, 30% keinginan, 20% tabungan/investasi", isCorrect: true },
+        { content: "50% makan, 30% transportasi, 20% hiburan", isCorrect: false },
+        { content: "Jumlah cicilan maksimal", isCorrect: false },
       ],
     },
   ];

@@ -1,0 +1,244 @@
+[
+    {
+        "title": "Pengenalan Asuransi",
+        "slug": "pengenalan-asuransi",
+        "description": "Memahami dasar-dasar asuransi dan pentingnya proteksi",
+        "categorySlug": "asuransi-proteksi",
+        "difficulty": "EASY",
+        "xpReward": 100,
+        "timeLimit": 300,
+        "questions": [
+            {
+                "content": "Apa tujuan utama memiliki asuransi?",
+                "explanation": "Asuransi bertujuan untuk melindungi dari risiko finansial akibat kejadian tak terduga seperti sakit, kecelakaan, atau kematian.",
+                "options": [
+                    {
+                        "content": "Investasi jangka panjang",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Proteksi dari risiko finansial",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Menabung dengan bunga tinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Mendapat uang gratis",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu premi asuransi?",
+                "explanation": "Premi adalah biaya yang dibayar secara berkala untuk mendapatkan perlindungan asuransi.",
+                "options": [
+                    {
+                        "content": "Uang yang diterima saat klaim",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Biaya berkala untuk perlindungan",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Bonus dari perusahaan asuransi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Denda keterlambatan",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa perbedaan asuransi jiwa dan kesehatan?",
+                "explanation": "Asuransi jiwa memberikan santunan jika tertanggung meninggal. Asuransi kesehatan menanggung biaya pengobatan.",
+                "options": [
+                    {
+                        "content": "Sama saja",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Jiwa = kematian, Kesehatan = pengobatan",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Kesehatan lebih mahal",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Jiwa hanya untuk lansia",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu uang pertanggungan (UP)?",
+                "explanation": "Uang pertanggungan adalah jumlah maksimal yang akan dibayarkan asuransi saat klaim disetujui.",
+                "options": [
+                    {
+                        "content": "Premi yang dibayar",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Jumlah maksimal klaim",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Nilai investasi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Biaya administrasi",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Mengapa penting memiliki asuransi kesehatan?",
+                "explanation": "Biaya rumah sakit sangat mahal. Asuransi kesehatan melindungi dari beban finansial akibat sakit atau kecelakaan.",
+                "options": [
+                    {
+                        "content": "Untuk investasi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Melindungi dari biaya RS yang mahal",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Mendapat obat gratis",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak penting",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Jenis-jenis Asuransi",
+        "slug": "jenis-jenis-asuransi",
+        "description": "Mengenal berbagai produk asuransi di Indonesia",
+        "categorySlug": "asuransi-proteksi",
+        "difficulty": "MEDIUM",
+        "xpReward": 150,
+        "timeLimit": 420,
+        "questions": [
+            {
+                "content": "Apa itu BPJS Kesehatan?",
+                "explanation": "BPJS Kesehatan adalah asuransi kesehatan wajib dari pemerintah untuk semua warga Indonesia.",
+                "options": [
+                    {
+                        "content": "Asuransi swasta",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Asuransi kesehatan wajib dari pemerintah",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Asuransi hanya untuk PNS",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tabungan pensiun",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu asuransi unit link?",
+                "explanation": "Unit link adalah produk yang menggabungkan asuransi dan investasi. Premi dialokasikan untuk proteksi dan investasi.",
+                "options": [
+                    {
+                        "content": "Asuransi murni tanpa investasi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Gabungan asuransi dan investasi",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Asuransi untuk kendaraan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tabungan deposito",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Asuransi apa yang wajib untuk kendaraan bermotor?",
+                "explanation": "STNK kendaraan sudah termasuk asuransi TJH (Tanggung Jawab Hukum) wajib dari Jasa Raharja.",
+                "options": [
+                    {
+                        "content": "Tidak ada yang wajib",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Asuransi Jasa Raharja (TJH)",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Asuransi all risk",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "BPJS Kesehatan",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa perbedaan asuransi term life dan whole life?",
+                "explanation": "Term life: perlindungan jangka waktu tertentu. Whole life: perlindungan seumur hidup dengan nilai tunai.",
+                "options": [
+                    {
+                        "content": "Sama saja",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Term = jangka waktu, Whole = seumur hidup",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Term lebih mahal",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Whole tidak ada manfaat kematian",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu asuransi perjalanan?",
+                "explanation": "Asuransi perjalanan melindungi dari risiko selama bepergian: sakit, kecelakaan, bagasi hilang, pembatalan tiket.",
+                "options": [
+                    {
+                        "content": "Asuransi kendaraan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Proteksi risiko selama bepergian",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Asuransi rumah",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tabungan liburan",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    }
+]

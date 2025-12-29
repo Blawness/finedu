@@ -16,46 +16,46 @@ import {
 
 const categories = [
   {
-    name: "Dasar Ekonomi Syariah",
-    slug: "dasar-ekonomi-syariah",
+    name: "Dasar Literasi Keuangan",
+    slug: "dasar-literasi-keuangan",
     icon: "📖",
     color: "bg-emerald-500",
-    description: "Prinsip halal/haram, riba, gharar, maysir",
+    description: "Budgeting, menabung, pengelolaan keuangan pribadi",
   },
   {
-    name: "Perbankan Syariah",
-    slug: "perbankan-syariah",
+    name: "Perbankan Digital",
+    slug: "perbankan-digital",
     icon: "🏦",
     color: "bg-blue-500",
-    description: "Mudharabah, murabahah, musyarakah, wadi'ah",
+    description: "Mobile banking, transfer, layanan bank digital",
   },
   {
-    name: "Fintech Syariah",
-    slug: "fintech-syariah",
+    name: "Fintech & E-Wallet",
+    slug: "fintech-ewallet",
     icon: "📱",
     color: "bg-purple-500",
-    description: "P2P lending syariah, crowdfunding, payment",
+    description: "E-wallet, payment gateway, QRIS, pinjaman online",
   },
   {
-    name: "Investasi Halal",
-    slug: "investasi-halal",
+    name: "Investasi & Saham",
+    slug: "investasi-saham",
     icon: "📈",
     color: "bg-amber-500",
-    description: "Saham syariah, sukuk, reksadana syariah",
+    description: "Saham, reksadana, obligasi, crypto",
   },
   {
-    name: "Asuransi Syariah",
-    slug: "asuransi-syariah",
+    name: "Asuransi & Proteksi",
+    slug: "asuransi-proteksi",
     icon: "🛡️",
     color: "bg-red-500",
-    description: "Takaful, hibah, dana investasi",
+    description: "Jenis asuransi, klaim, manfaat proteksi",
   },
   {
-    name: "Zakat Digital",
-    slug: "zakat-digital",
+    name: "Pajak & Perencanaan",
+    slug: "pajak-perencanaan",
     icon: "💰",
     color: "bg-cyan-500",
-    description: "Perhitungan zakat, infaq, sedekah online",
+    description: "Pajak penghasilan, NPWP, perencanaan keuangan",
   },
 ];
 
@@ -64,7 +64,7 @@ const features = [
     icon: Target,
     title: "Quiz Interaktif",
     description:
-      "Pelajari konsep keuangan syariah melalui quiz yang menyenangkan dan edukatif",
+      "Pelajari konsep fintech dan keuangan melalui quiz yang menyenangkan dan edukatif",
   },
   {
     icon: Zap,
@@ -119,19 +119,19 @@ export default function HomePage() {
           <div className="container relative">
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <Badge variant="secondary" className="text-sm px-4 py-1.5">
-                🎓 Platform Edukasi Fintech Syariah #1 di Indonesia
+                🎓 Platform Edukasi Fintech #1 di Indonesia
               </Badge>
 
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                 Belajar{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">
-                  Fintech Syariah
+                  Fintech Indonesia
                 </span>{" "}
                 dengan Cara Menyenangkan
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-                Tingkatkan literasi keuangan syariah Anda melalui quiz interaktif
+                Tingkatkan literasi keuangan digital Anda melalui quiz interaktif
                 dengan sistem gamifikasi. Kumpulkan XP, raih achievement, dan
                 bersaing di leaderboard!
               </p>
@@ -210,10 +210,10 @@ export default function HomePage() {
           <div className="container">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Kategori Quiz Fintech Syariah
+                Kategori Quiz Fintech
               </h2>
               <p className="text-muted-foreground text-lg">
-                Pelajari berbagai aspek keuangan syariah dari dasar hingga
+                Pelajari berbagai aspek keuangan digital dari dasar hingga
                 tingkat lanjut.
               </p>
             </div>
@@ -265,7 +265,7 @@ export default function HomePage() {
                 ))}
               </div>
               <h2 className="text-3xl md:text-4xl font-bold">
-                Siap Meningkatkan Literasi Keuangan Syariah Anda?
+                Siap Meningkatkan Literasi Keuangan Digital Anda?
               </h2>
               <p className="text-lg opacity-90">
                 Bergabunglah sekarang dan mulai perjalanan belajar Anda. Gratis

@@ -1,0 +1,244 @@
+[
+    {
+        "title": "Pengenalan E-Wallet",
+        "slug": "pengenalan-ewallet",
+        "description": "Memahami dompet digital dan cara penggunaannya",
+        "categorySlug": "fintech-ewallet",
+        "difficulty": "EASY",
+        "xpReward": 100,
+        "timeLimit": 300,
+        "questions": [
+            {
+                "content": "Apa itu E-Wallet?",
+                "explanation": "E-Wallet adalah dompet digital yang menyimpan uang elektronik untuk pembayaran tanpa uang tunai.",
+                "options": [
+                    {
+                        "content": "Dompet kulit elektronik",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Dompet digital untuk pembayaran non-tunai",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Kartu ATM baru",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Rekening tabungan online",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Contoh E-Wallet populer di Indonesia?",
+                "explanation": "GoPay, OVO, DANA, ShopeePay, dan LinkAja adalah e-wallet populer di Indonesia yang diawasi Bank Indonesia.",
+                "options": [
+                    {
+                        "content": "PayPal dan Venmo",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "GoPay, OVO, DANA, ShopeePay",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Visa dan Mastercard",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "ATM dan kartu debit",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu QRIS?",
+                "explanation": "QRIS (Quick Response Code Indonesian Standard) adalah standar QR code pembayaran yang bisa dipakai semua aplikasi pembayaran.",
+                "options": [
+                    {
+                        "content": "Kartu kredit baru",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Standar QR code pembayaran nasional",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Aplikasi e-wallet",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Transfer bank",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Bagaimana cara top up e-wallet?",
+                "explanation": "E-wallet bisa di-top up melalui transfer bank, merchant/minimarket, atau ATM.",
+                "options": [
+                    {
+                        "content": "Hanya via bank tertentu",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Transfer bank, minimarket, atau ATM",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Hanya pakai kartu kredit",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak bisa di-top up",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa batas maksimal saldo e-wallet unregistered?",
+                "explanation": "E-wallet tanpa verifikasi (unregistered) memiliki batas saldo Rp 2 juta, setelah upgrade bisa sampai Rp 10 juta atau lebih.",
+                "options": [
+                    {
+                        "content": "Tidak ada batas",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Rp 2 juta (unregistered)",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Rp 100 ribu",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Rp 50 juta",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Pinjaman Online dan P2P Lending",
+        "slug": "pinjaman-online-p2p",
+        "description": "Memahami fintech lending dan cara aman meminjam online",
+        "categorySlug": "fintech-ewallet",
+        "difficulty": "MEDIUM",
+        "xpReward": 150,
+        "timeLimit": 420,
+        "questions": [
+            {
+                "content": "Apa itu P2P Lending?",
+                "explanation": "P2P (Peer-to-Peer) Lending adalah platform yang menghubungkan peminjam dengan pemberi pinjaman tanpa melalui bank.",
+                "options": [
+                    {
+                        "content": "Pinjaman antar teman",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Platform menghubungkan peminjam dan pendana",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Pinjaman dari pemerintah",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Kartu kredit online",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Bagaimana cara cek legalitas pinjol?",
+                "explanation": "Cek di website OJK (Otoritas Jasa Keuangan) apakah fintech lending terdaftar dan berizin.",
+                "options": [
+                    {
+                        "content": "Lihat iklan di media sosial",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Cek di website OJK",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Tanya teman",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak perlu dicek",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa risiko pinjol ilegal?",
+                "explanation": "Pinjol ilegal: bunga sangat tinggi, penagihan dengan intimidasi, data pribadi disalahgunakan.",
+                "options": [
+                    {
+                        "content": "Bunga lebih rendah",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Bunga tinggi dan penagihan intimidatif",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Tidak ada risiko",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Dilindungi pemerintah",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Berapa batas bunga maksimal pinjol legal per hari?",
+                "explanation": "OJK menetapkan bunga maksimal 0.4% per hari atau sekitar 12% per bulan untuk pinjol legal.",
+                "options": [
+                    {
+                        "content": "1% per hari",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "0.4% per hari",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "5% per hari",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak ada batas",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa yang harus diperhatikan sebelum mengajukan pinjol?",
+                "explanation": "Pastikan legalitas, baca syarat ketentuan, hitung kemampuan bayar, dan pastikan bunga jelas.",
+                "options": [
+                    {
+                        "content": "Langsung ajukan saja",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Cek legalitas dan hitung kemampuan bayar",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Pilih yang bunganya tinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak perlu baca syarat",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    }
+]

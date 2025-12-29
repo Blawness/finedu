@@ -1,0 +1,244 @@
+[
+    {
+        "title": "Pengenalan Investasi",
+        "slug": "pengenalan-investasi",
+        "description": "Memahami dasar-dasar investasi untuk pemula",
+        "categorySlug": "investasi-saham",
+        "difficulty": "EASY",
+        "xpReward": 100,
+        "timeLimit": 300,
+        "questions": [
+            {
+                "content": "Apa tujuan utama dari investasi?",
+                "explanation": "Investasi bertujuan untuk mengembangkan nilai uang di masa depan, mengalahkan inflasi, dan mencapai tujuan finansial.",
+                "options": [
+                    {
+                        "content": "Menghabiskan uang",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Mengembangkan nilai uang untuk masa depan",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Menyimpan uang di rumah",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Membeli barang mewah",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu reksadana?",
+                "explanation": "Reksadana adalah wadah investasi kolektif yang dikelola manajer investasi profesional untuk membeli berbagai instrumen investasi.",
+                "options": [
+                    {
+                        "content": "Rekening tabungan khusus",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Wadah investasi yang dikelola profesional",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Saham perusahaan besar",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Pinjaman dari bank",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa perbedaan saham dan obligasi?",
+                "explanation": "Saham = kepemilikan perusahaan (risiko tinggi, return tinggi). Obligasi = surat utang (risiko rendah, return tetap).",
+                "options": [
+                    {
+                        "content": "Sama saja",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Saham = kepemilikan, Obligasi = surat utang",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Obligasi lebih berisiko",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Saham tidak bisa dijual",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu diversifikasi dalam investasi?",
+                "explanation": "Diversifikasi adalah menyebar investasi ke berbagai instrumen untuk mengurangi risiko. 'Jangan taruh semua telur di satu keranjang'.",
+                "options": [
+                    {
+                        "content": "Fokus di satu saham saja",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Menyebar investasi ke berbagai instrumen",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Menjual semua saham",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Menambah modal terus",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa hubungan risiko dan return dalam investasi?",
+                "explanation": "Semakin tinggi potensi return, semakin tinggi risiko. High risk high return, low risk low return.",
+                "options": [
+                    {
+                        "content": "Tidak ada hubungan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "High risk high return",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "High risk low return",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Semua investasi aman",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Investasi Saham untuk Pemula",
+        "slug": "investasi-saham-pemula",
+        "description": "Panduan memulai investasi saham di pasar modal Indonesia",
+        "categorySlug": "investasi-saham",
+        "difficulty": "MEDIUM",
+        "xpReward": 150,
+        "timeLimit": 420,
+        "questions": [
+            {
+                "content": "Apa itu BEI (Bursa Efek Indonesia)?",
+                "explanation": "BEI adalah tempat perdagangan efek (saham, obligasi) di Indonesia yang mengawasi transaksi pasar modal.",
+                "options": [
+                    {
+                        "content": "Bank Indonesia",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tempat perdagangan saham di Indonesia",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Aplikasi investasi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Lembaga penjamin",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Berapa minimal pembelian saham di Indonesia?",
+                "explanation": "Minimal pembelian adalah 1 lot = 100 lembar saham. Harga tergantung sahamnya.",
+                "options": [
+                    {
+                        "content": "1 lembar saham",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "1 lot (100 lembar)",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "1000 lembar",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Rp 1 juta",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu dividen?",
+                "explanation": "Dividen adalah pembagian keuntungan perusahaan kepada pemegang saham, biasanya dibayar per tahun.",
+                "options": [
+                    {
+                        "content": "Harga saham naik",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Pembagian keuntungan perusahaan",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Bonus dari broker",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Biaya transaksi",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu indeks LQ45?",
+                "explanation": "LQ45 adalah indeks 45 saham dengan likuiditas dan kapitalisasi pasar tinggi di BEI.",
+                "options": [
+                    {
+                        "content": "Saham termurah",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "45 saham paling likuid di BEI",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Saham luar negeri",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Harga emas",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa keuntungan investasi melalui reksadana saham?",
+                "explanation": "Dikelola profesional, modal kecil bisa ikut, otomatis terdiversifikasi.",
+                "options": [
+                    {
+                        "content": "Return pasti tinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Dikelola profesional dan terdiversifikasi",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Tanpa biaya sama sekali",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Bisa tarik kapan saja tanpa risiko",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    }
+]

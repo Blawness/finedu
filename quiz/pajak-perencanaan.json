@@ -1,0 +1,244 @@
+[
+    {
+        "title": "Pengenalan Pajak di Indonesia",
+        "slug": "pengenalan-pajak",
+        "description": "Memahami dasar-dasar perpajakan untuk warga negara Indonesia",
+        "categorySlug": "pajak-perencanaan",
+        "difficulty": "EASY",
+        "xpReward": 100,
+        "timeLimit": 300,
+        "questions": [
+            {
+                "content": "Apa itu NPWP?",
+                "explanation": "NPWP (Nomor Pokok Wajib Pajak) adalah identitas wajib pajak untuk keperluan administrasi perpajakan.",
+                "options": [
+                    {
+                        "content": "Nomor rekening bank",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Identitas wajib pajak",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Kartu identitas penduduk",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Nomor asuransi",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Kapan deadline lapor SPT Tahunan untuk orang pribadi?",
+                "explanation": "SPT Tahunan orang pribadi harus dilaporkan paling lambat 31 Maret setiap tahunnya.",
+                "options": [
+                    {
+                        "content": "31 Januari",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "31 Maret",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "30 April",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "31 Desember",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu PPh 21?",
+                "explanation": "PPh 21 adalah pajak penghasilan yang dipotong dari gaji karyawan oleh pemberi kerja.",
+                "options": [
+                    {
+                        "content": "Pajak pertambahan nilai",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Pajak penghasilan dari gaji",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Pajak kendaraan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Pajak properti",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Berapa PTKP (Penghasilan Tidak Kena Pajak) untuk pribadi lajang?",
+                "explanation": "PTKP untuk wajib pajak orang pribadi lajang adalah Rp 54 juta per tahun (per 2024).",
+                "options": [
+                    {
+                        "content": "Rp 24 juta/tahun",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Rp 54 juta/tahun",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Rp 100 juta/tahun",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak ada PTKP",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Mengapa penting taat pajak?",
+                "explanation": "Pajak adalah sumber pendapatan negara untuk membiayai pembangunan, fasilitas publik, dan pelayanan masyarakat.",
+                "options": [
+                    {
+                        "content": "Hanya untuk formalitas",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Membiayai pembangunan dan pelayanan publik",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Tidak penting",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Untuk membayar gaji presiden saja",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Perencanaan Keuangan Jangka Panjang",
+        "slug": "perencanaan-keuangan-jangka-panjang",
+        "description": "Strategi merencanakan keuangan untuk masa depan",
+        "categorySlug": "pajak-perencanaan",
+        "difficulty": "MEDIUM",
+        "xpReward": 150,
+        "timeLimit": 420,
+        "questions": [
+            {
+                "content": "Apa langkah pertama dalam perencanaan keuangan?",
+                "explanation": "Langkah pertama adalah mengetahui kondisi keuangan saat ini: pendapatan, pengeluaran, aset, dan utang.",
+                "options": [
+                    {
+                        "content": "Langsung investasi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Mengetahui kondisi keuangan saat ini",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Beli asuransi mahal",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Ambil pinjaman",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu FIRE (Financial Independence Retire Early)?",
+                "explanation": "FIRE adalah strategi untuk mencapai kebebasan finansial dan pensiun dini melalui tabungan agresif dan investasi.",
+                "options": [
+                    {
+                        "content": "Asuransi kebakaran",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Strategi pensiun dini dan kebebasan finansial",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Produk reksadana",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Jenis saham",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Berapa dana pensiun ideal yang harus disiapkan?",
+                "explanation": "Umumnya 70-80% dari pengeluaran bulanan saat ini dikalikan 12 bulan dikalikan perkiraan tahun pensiun.",
+                "options": [
+                    {
+                        "content": "Rp 100 juta cukup",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "70-80% pengeluaran x tahun pensiun",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Tidak perlu disiapkan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "1x gaji terakhir",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu financial goal?",
+                "explanation": "Financial goal adalah tujuan keuangan spesifik dengan target waktu dan jumlah, seperti DP rumah atau dana pendidikan anak.",
+                "options": [
+                    {
+                        "content": "Keinginan belanja",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tujuan keuangan spesifik dengan target",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Gaji yang diinginkan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Pinjaman maksimal",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Instrumen apa yang cocok untuk dana pensiun jangka panjang?",
+                "explanation": "Untuk jangka panjang (>10 tahun): reksadana saham, saham, atau properti karena potensi return tinggi.",
+                "options": [
+                    {
+                        "content": "Tabungan biasa",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Reksadana saham atau saham",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Menyimpan uang tunai",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Pinjol",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    }
+]

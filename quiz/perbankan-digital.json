@@ -1,0 +1,244 @@
+[
+    {
+        "title": "Pengenalan Perbankan Digital",
+        "slug": "pengenalan-perbankan-digital",
+        "description": "Memahami layanan bank digital dan mobile banking di Indonesia",
+        "categorySlug": "perbankan-digital",
+        "difficulty": "EASY",
+        "xpReward": 100,
+        "timeLimit": 300,
+        "questions": [
+            {
+                "content": "Apa itu mobile banking?",
+                "explanation": "Mobile banking adalah layanan perbankan yang bisa diakses melalui aplikasi smartphone untuk transaksi keuangan.",
+                "options": [
+                    {
+                        "content": "Bank yang berpindah-pindah lokasi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Layanan bank melalui aplikasi smartphone",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Kartu ATM yang bisa dibawa",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Bank tanpa kantor cabang",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa keuntungan menggunakan mobile banking?",
+                "explanation": "Mobile banking memungkinkan transaksi kapan saja tanpa perlu ke ATM atau kantor cabang.",
+                "options": [
+                    {
+                        "content": "Bunga lebih tinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Transaksi 24/7 tanpa ke ATM",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Gratis semua transaksi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak perlu rekening",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa yang dimaksud dengan bank digital?",
+                "explanation": "Bank digital adalah bank yang beroperasi sepenuhnya secara online tanpa kantor cabang fisik.",
+                "options": [
+                    {
+                        "content": "Bank dengan banyak ATM",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Bank yang operasi sepenuhnya online",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Bank dengan website",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Bank untuk programmer",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu transfer real-time (BI-FAST)?",
+                "explanation": "BI-FAST adalah sistem transfer antar bank yang prosesnya instan 24/7 dengan biaya lebih murah.",
+                "options": [
+                    {
+                        "content": "Transfer ke luar negeri",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Transfer antar bank instan 24/7",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Transfer dengan bunga",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Transfer hanya hari kerja",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Bagaimana cara menjaga keamanan mobile banking?",
+                "explanation": "Gunakan PIN/password kuat, jangan share OTP, dan pastikan unduh aplikasi resmi dari Play Store/App Store.",
+                "options": [
+                    {
+                        "content": "Catat PIN di notes HP",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Jangan share OTP dan gunakan password kuat",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Berikan ke orang yang dipercaya",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Gunakan WiFi publik",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Transaksi dan Layanan Bank",
+        "slug": "transaksi-layanan-bank",
+        "description": "Mengenal berbagai jenis transaksi dan produk perbankan",
+        "categorySlug": "perbankan-digital",
+        "difficulty": "MEDIUM",
+        "xpReward": 150,
+        "timeLimit": 420,
+        "questions": [
+            {
+                "content": "Apa perbedaan tabungan dan deposito?",
+                "explanation": "Tabungan bisa diambil kapan saja dengan bunga rendah, deposito terkunci dalam jangka waktu tertentu dengan bunga lebih tinggi.",
+                "options": [
+                    {
+                        "content": "Tidak ada perbedaan",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Deposito terkunci dengan bunga lebih tinggi",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Tabungan bunga lebih tinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Deposito tanpa bunga",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu rekening giro?",
+                "explanation": "Rekening giro untuk transaksi bisnis dengan cek/bilyet giro, bunga rendah tapi fleksibel.",
+                "options": [
+                    {
+                        "content": "Tabungan untuk anak",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Rekening bisnis dengan cek",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Deposito jangka panjang",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Rekening untuk pensiun",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa yang terjadi jika saldo tabungan di bawah minimum?",
+                "explanation": "Bank biasanya memotong biaya administrasi tambahan atau menutup rekening jika saldo di bawah minimum.",
+                "options": [
+                    {
+                        "content": "Rekening otomatis upgrade",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Dikenakan biaya tambahan",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Bunga menjadi lebih tinggi",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Tidak ada konsekuensi",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa fungsi virtual account?",
+                "explanation": "Virtual account adalah nomor rekening unik untuk pembayaran tertentu, memudahkan identifikasi pembayaran.",
+                "options": [
+                    {
+                        "content": "Rekening palsu",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Nomor unik untuk identifikasi pembayaran",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Rekening tanpa kartu ATM",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Investasi otomatis",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "content": "Apa itu LPS dan manfaatnya?",
+                "explanation": "LPS (Lembaga Penjamin Simpanan) menjamin simpanan nasabah hingga Rp 2 miliar jika bank bangkrut.",
+                "options": [
+                    {
+                        "content": "Layanan pinjaman cepat",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Penjamin simpanan hingga Rp 2 miliar",
+                        "isCorrect": true
+                    },
+                    {
+                        "content": "Asuransi kesehatan bank",
+                        "isCorrect": false
+                    },
+                    {
+                        "content": "Lembaga transfer uang",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    }
+]

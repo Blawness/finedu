@@ -8,9 +8,9 @@ const footerLinks = {
         { name: "Achievements", href: "/achievements" },
     ],
     categories: [
-        { name: "Ekonomi Syariah", href: "/quiz/dasar-ekonomi-syariah" },
-        { name: "Perbankan Syariah", href: "/quiz/perbankan-syariah" },
-        { name: "Fintech Syariah", href: "/quiz/fintech-syariah" },
+        { name: "Literasi Keuangan", href: "/quiz/dasar-literasi-keuangan" },
+        { name: "Perbankan Digital", href: "/quiz/perbankan-digital" },
+        { name: "Fintech & E-Wallet", href: "/quiz/fintech-ewallet" },
     ],
     legal: [
         { name: "Kebijakan Privasi", href: "/privacy" },
@@ -33,7 +33,7 @@ export function Footer() {
                         </Link>
                         <p className="text-sm text-muted-foreground">
                             Platform edukasi interaktif untuk meningkatkan literasi keuangan
-                            syariah di Indonesia.
+                            digital di Indonesia.
                         </p>
                     </div>
 
@@ -94,7 +94,7 @@ export function Footer() {
                         © {new Date().getFullYear()} FinEdu. Semua hak dilindungi.
                     </p>
                     <p className="text-sm text-muted-foreground">
-                        Dibuat dengan ❤️ untuk literasi keuangan syariah Indonesia
+                        Dibuat dengan ❤️ untuk literasi keuangan digital Indonesia
                     </p>
                 </div>
             </div>

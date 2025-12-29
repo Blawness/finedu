@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FinEdu - Interactive Fintech Syariah Quiz",
-  description: "Platform edukasi interaktif untuk meningkatkan literasi keuangan syariah di Indonesia dengan sistem gamifikasi.",
+  title: "FinEdu - Platform Edukasi Fintech Indonesia",
+  description: "Platform edukasi interaktif untuk meningkatkan literasi keuangan digital di Indonesia dengan sistem gamifikasi.",
 };
 
 export default function RootLayout({

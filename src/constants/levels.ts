@@ -17,7 +17,7 @@ export const LEVELS: Level[] = [
     { level: 7, minXP: 2100, title: "Master", titleEn: "Master" },
     { level: 8, minXP: 2800, title: "Guru", titleEn: "Guru" },
     { level: 9, minXP: 3600, title: "Cendekiawan", titleEn: "Scholar" },
-    { level: 10, minXP: 4500, title: "Ulama Keuangan", titleEn: "Financial Scholar" },
+    { level: 10, minXP: 4500, title: "Pakar Keuangan", titleEn: "Financial Expert" },
 ];
 
 export const MAX_LEVEL = LEVELS.length;
