@@ -12,7 +12,7 @@ import { AnswerOption } from "@/components/quiz/AnswerOption";
 import { Timer } from "@/components/quiz/Timer";
 import { pageTransition, xpPopupVariants } from "@/lib/animations";
 import { getDifficultyColor, getDifficultyLabel } from "@/lib/gamification";
-import { ChevronLeft, ChevronRight, Trophy, RotateCcw, Home, Zap, Flame, Loader2 } from "lucide-react";
+import { ChevronLeft, ChevronRight, Trophy, RotateCcw, Home, Zap, Flame, Loader2, Medal } from "lucide-react";
 
 interface Question {
     id: number;
@@ -62,6 +62,7 @@ export default function QuizClient({ quiz }: QuizClientProps) {
         newTotalXP: number;
         streak: { current: number; longest: number };
         levelUp: { level: number; title: string } | null;
+        achievements: { id: number; name: string }[];
     } | null>(null);
 
     const currentQuestion = quiz.questions[currentQuestionIndex];
@@ -216,6 +217,27 @@ export default function QuizClient({ quiz }: QuizClientProps) {
                                         <p className="text-sm text-muted-foreground">
                                             Selamat! Anda naik ke Level {submitResult.levelUp.level} - {submitResult.levelUp.title}
                                         </p>
+                                    </motion.div>
+                                )}
+
+                                {submitResult?.achievements && submitResult.achievements.length > 0 && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: 0.5 }}
+                                        className="p-4 bg-gradient-to-r from-amber-500/10 to-yellow-500/10 rounded-lg border border-amber-500/20"
+                                    >
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <Medal className="w-5 h-5 text-amber-500" />
+                                            <p className="font-bold text-amber-600">Achievement Baru!</p>
+                                        </div>
+                                        <div className="space-y-1">
+                                            {submitResult.achievements.map((achievement) => (
+                                                <p key={achievement.id} className="text-sm text-muted-foreground">
+                                                    🏆 {achievement.name}
+                                                </p>
+                                            ))}
+                                        </div>
                                     </motion.div>
                                 )}
 

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { auth } from "@/auth";
 import prisma from "@/lib/prisma";
 import { calculateXP, checkLevelUp, getLevelFromXP } from "@/lib/gamification";
+import { checkAndAwardAchievements } from "@/lib/achievements";
 
 interface SubmitQuizRequest {
     quizId: number;
@@ -161,6 +162,9 @@ export async function POST(request: Request) {
             return attempt;
         });
 
+        // Check and award achievements
+        const newAchievements = await checkAndAwardAchievements(session.user.id);
+
         return NextResponse.json({
             success: true,
             attemptId: result.id,
@@ -175,7 +179,11 @@ export async function POST(request: Request) {
             streak: {
                 current: newStreak,
                 longest: newLongestStreak
-            }
+            },
+            achievements: newAchievements.map(a => ({
+                id: a.id,
+                name: a.name
+            }))
         });
 
     } catch (error) {
