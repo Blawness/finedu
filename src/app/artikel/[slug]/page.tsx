@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MarkdownRenderer } from "@/components/article/MarkdownRenderer";
 import { InfographicEmbed } from "@/components/article/InfographicEmbed";
+import { ShareButtons } from "@/components/article/ShareButtons";
 import {
     getAllArticles,
     getArticleBySlug,
@@ -207,38 +208,7 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
                             <Card>
                                 <CardContent className="p-6">
                                     <h3 className="font-semibold mb-3">Bagikan Artikel</h3>
-                                    <div className="flex gap-2">
-                                        <Button
-                                            variant="outline"
-                                            size="sm"
-                                            className="flex-1"
-                                            onClick={() => {
-                                                if (typeof window !== "undefined") {
-                                                    window.open(
-                                                        `https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(window.location.href)}`,
-                                                        "_blank"
-                                                    );
-                                                }
-                                            }}
-                                        >
-                                            Twitter
-                                        </Button>
-                                        <Button
-                                            variant="outline"
-                                            size="sm"
-                                            className="flex-1"
-                                            onClick={() => {
-                                                if (typeof window !== "undefined") {
-                                                    window.open(
-                                                        `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`,
-                                                        "_blank"
-                                                    );
-                                                }
-                                            }}
-                                        >
-                                            Facebook
-                                        </Button>
-                                    </div>
+                                    <ShareButtons title={article.title} />
                                 </CardContent>
                             </Card>
 
