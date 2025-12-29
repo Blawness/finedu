@@ -86,57 +86,100 @@ export function Header() {
                                 </div>
                             </div>
 
-                            <DropdownMenu>
-                                <DropdownMenuTrigger asChild>
-                                    <Button
-                                        variant="ghost"
-                                        className="relative h-10 w-10 rounded-full ring-2 ring-primary/20 hover:ring-primary/40 p-0"
-                                    >
-                                        {session.user.image ? (
-                                            <img
-                                                src={session.user.image}
-                                                alt={session.user.name || "User"}
-                                                className="h-10 w-10 rounded-full object-cover"
-                                            />
-                                        ) : (
-                                            <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">
-                                                {session.user.name?.charAt(0) || "U"}
+                            <div className="relative group">
+                                <Button
+                                    variant="ghost"
+                                    className="relative h-10 w-10 rounded-full ring-2 ring-primary/20 hover:ring-primary/40 p-0"
+                                >
+                                    {session.user.image ? (
+                                        <img
+                                            src={session.user.image}
+                                            alt={session.user.name || "User"}
+                                            className="h-10 w-10 rounded-full object-cover"
+                                        />
+                                    ) : (
+                                        <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">
+                                            {session.user.name?.charAt(0) || "U"}
+                                        </div>
+                                    )}
+                                </Button>
+
+                                {/* Hover Profile Card */}
+                                <div className="absolute right-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                    <div className="w-72 bg-background border rounded-xl shadow-lg overflow-hidden">
+                                        {/* Profile Header */}
+                                        <div className="bg-gradient-to-r from-primary/10 to-emerald-400/10 p-4">
+                                            <div className="flex items-center gap-3">
+                                                {session.user.image ? (
+                                                    <img
+                                                        src={session.user.image}
+                                                        alt={session.user.name || "User"}
+                                                        className="h-12 w-12 rounded-full object-cover border-2 border-background"
+                                                    />
+                                                ) : (
+                                                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-xl border-2 border-background">
+                                                        {session.user.name?.charAt(0) || "U"}
+                                                    </div>
+                                                )}
+                                                <div className="flex-1 min-w-0">
+                                                    <p className="font-semibold truncate">{session.user.name}</p>
+                                                    <p className="text-xs text-muted-foreground truncate">{session.user.email}</p>
+                                                </div>
                                             </div>
-                                        )}
-                                    </Button>
-                                </DropdownMenuTrigger>
-                                <DropdownMenuContent align="end" className="w-56">
-                                    <div className="flex items-center justify-start gap-2 p-2">
-                                        <div className="flex flex-col space-y-1 leading-none">
-                                            <p className="font-medium">{session.user.name}</p>
-                                            <p className="w-[200px] truncate text-xs text-muted-foreground">
-                                                {session.user.email}
-                                            </p>
+                                        </div>
+
+                                        {/* Stats Grid */}
+                                        <div className="grid grid-cols-3 gap-2 p-3 border-b">
+                                            <div className="text-center p-2 rounded-lg bg-amber-500/10">
+                                                <div className="flex items-center justify-center gap-1 text-amber-500">
+                                                    <Star className="w-4 h-4 fill-current" />
+                                                    <span className="font-bold">{session.user.totalXP || 0}</span>
+                                                </div>
+                                                <p className="text-xs text-muted-foreground mt-0.5">XP</p>
+                                            </div>
+                                            <div className="text-center p-2 rounded-lg bg-primary/10">
+                                                <div className="flex items-center justify-center gap-1 text-primary">
+                                                    <Trophy className="w-4 h-4" />
+                                                    <span className="font-bold">{session.user.level || 1}</span>
+                                                </div>
+                                                <p className="text-xs text-muted-foreground mt-0.5">Level</p>
+                                            </div>
+                                            <div className="text-center p-2 rounded-lg bg-orange-500/10">
+                                                <div className="flex items-center justify-center gap-1 text-orange-500">
+                                                    <Flame className="w-4 h-4 fill-current" />
+                                                    <span className="font-bold">{session.user.currentStreak || 0}</span>
+                                                </div>
+                                                <p className="text-xs text-muted-foreground mt-0.5">Streak</p>
+                                            </div>
+                                        </div>
+
+                                        {/* Quick Links */}
+                                        <div className="p-2 space-y-1">
+                                            <Link
+                                                href="/profile"
+                                                className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-accent transition-colors text-sm"
+                                            >
+                                                <User className="w-4 h-4" />
+                                                <span>Profil Saya</span>
+                                            </Link>
+                                            <Link
+                                                href="/settings"
+                                                className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-accent transition-colors text-sm"
+                                            >
+                                                <Settings className="w-4 h-4" />
+                                                <span>Pengaturan</span>
+                                            </Link>
+                                            <button
+                                                onClick={() => signOut({ callbackUrl: "/" })}
+                                                className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-red-50 text-red-500 transition-colors text-sm w-full text-left"
+                                            >
+                                                <LogOut className="w-4 h-4" />
+                                                <span>Keluar</span>
+                                            </button>
                                         </div>
                                     </div>
-                                    <DropdownMenuSeparator />
-                                    <DropdownMenuItem asChild>
-                                        <Link href="/profile" className="cursor-pointer">
-                                            <User className="mr-2 h-4 w-4" />
-                                            <span>Profil Saya</span>
-                                        </Link>
-                                    </DropdownMenuItem>
-                                    <DropdownMenuItem asChild>
-                                        <Link href="/settings" className="cursor-pointer">
-                                            <Settings className="mr-2 h-4 w-4" />
-                                            <span>Pengaturan</span>
-                                        </Link>
-                                    </DropdownMenuItem>
-                                    <DropdownMenuSeparator />
-                                    <DropdownMenuItem
-                                        className="text-red-500 cursor-pointer focus:text-red-500 focus:bg-red-50"
-                                        onClick={() => signOut({ callbackUrl: "/" })}
-                                    >
-                                        <LogOut className="mr-2 h-4 w-4" />
-                                        <span>Keluar</span>
-                                    </DropdownMenuItem>
-                                </DropdownMenuContent>
-                            </DropdownMenu>
+                                </div>
+                            </div>
                         </>
                     ) : (
                         <div className="flex items-center gap-2">

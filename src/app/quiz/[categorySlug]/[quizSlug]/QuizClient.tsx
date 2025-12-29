@@ -45,7 +45,7 @@ interface QuizClientProps {
 
 export default function QuizClient({ quiz }: QuizClientProps) {
     const router = useRouter();
-    const { data: session } = useSession();
+    const { data: session, update: updateSession } = useSession();
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
     const [isRevealed, setIsRevealed] = useState(false);
@@ -87,6 +87,9 @@ export default function QuizClient({ quiz }: QuizClientProps) {
                     if (response.ok) {
                         const data = await response.json();
                         setSubmitResult(data);
+
+                        // Refresh session to update XP/level in header
+                        await updateSession();
                     }
                 } catch (error) {
                     console.error("Failed to submit quiz:", error);
@@ -96,7 +99,7 @@ export default function QuizClient({ quiz }: QuizClientProps) {
             };
             submitQuiz();
         }
-    }, [isCompleted, submitResult, isSubmitting, session, quiz.id, selectedAnswers, timeTaken]);
+    }, [isCompleted, submitResult, isSubmitting, session, quiz.id, selectedAnswers, timeTaken, updateSession]);
 
     const handleSelectAnswer = (optionId: number) => {
         if (isRevealed) return;
