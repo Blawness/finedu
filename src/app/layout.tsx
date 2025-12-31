@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "FinEdu - Platform Edukasi Fintech Indonesia",
   description: "Platform edukasi interaktif untuk meningkatkan literasi keuangan digital di Indonesia dengan sistem gamifikasi.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

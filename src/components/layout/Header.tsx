@@ -16,6 +16,7 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X, Trophy, Star, Flame, User, LogOut, Settings } from "lucide-react";
 import { StreakCounter } from "../gamification/StreakCounter";
+import { Logo } from "@/components/ui/Logo";
 
 export function Header() {
     const pathname = usePathname();
@@ -48,14 +49,7 @@ export function Header() {
         >
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-emerald-400 flex items-center justify-center">
-                        <span className="font-bold text-white text-lg">F</span>
-                    </div>
-                    <span className="font-bold text-xl hidden sm:inline-block">
-                        FinEdu
-                    </span>
-                </Link>
+                <Logo />
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-6">
