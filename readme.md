@@ -198,8 +198,6 @@ bun run quiz:import:prod     # Import quiz ke production
 bun run quiz:check:prod      # Check quiz production
 ```
 
-📚 **Dokumentasi lengkap:** Lihat [ENV_COMMANDS.md](./ENV_COMMANDS.md) untuk panduan detail.
-
 ---
 
 ## 📁 Struktur Project
@@ -327,8 +325,6 @@ curl -X POST "https://www.finedu.my.id/api/admin/import-quiz" \
   -H "Authorization: Bearer YOUR_ADMIN_SECRET"
 ```
 
-📚 **Dokumentasi lengkap:** Lihat [quiz/README.md](./quiz/README.md)
-
 ---
 
 ## 🚀 Deployment
@@ -359,11 +355,6 @@ bun run db:seed:prod
 curl -X POST "https://your-domain.vercel.app/api/admin/import-quiz" \
   -H "Authorization: Bearer YOUR_ADMIN_SECRET"
 ```
-
-📚 **Dokumentasi lengkap:** 
-- [VERCEL_QUICKSTART.md](./VERCEL_QUICKSTART.md)
-- [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md)
-- [VERCEL_TROUBLESHOOTING.md](./VERCEL_TROUBLESHOOTING.md)
 
 ### Environment Variables (Production)
 
